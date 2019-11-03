@@ -1,18 +1,36 @@
 .banner {
-    background: #D5D5D5;
+    background-image: url('/img/background-overlay.png');
     padding: 0 15px;
+    background-size: cover;
+    background-position: top center;
+    z-index: 2;
 }
 
 .banner h1 {
     color: #fff;
-    font-size: 48px;
+    font-size: 64px;
     text-align: center;
 }
 
 .banner h2 {
-    color: #000;
-    font-size: 36px;
+    color: #fff;
+    font-size: 24px;
     text-align: center;
+}
+
+.red {
+    background-color: rgb(164, 35, 52);
+    color: #fff;
+}
+
+.black {
+    background-color: rgb(27, 27, 28);
+    color: #fff;
+}
+
+.blue {
+    background-color: rgb(2, 83, 253);
+    color: #fff;
 }
 
 .lightgray {
@@ -38,4 +56,16 @@
     width: 50%;
 }
 
+@media only screen and (min-width: 580px) {
+    .banner h1 {
+        color: #fff;
+        font-size: 100px;
+        text-align: center;
+    }
 
+    .banner h2 {
+        color: #fff;
+        font-size: 48px;
+        text-align: center;
+    }
+}

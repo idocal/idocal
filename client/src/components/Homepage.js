@@ -30,66 +30,66 @@ export default class Homepage extends Component {
     render() {
         const fullHeight = {minHeight: this.state.windowHeight + "px"};
         return (
-            <FlexView grow column className="homepage" width="100%">
-                <FlexView column className="banner section"
-                          hAlignContent="center"
-                          vAlignContent="center"
-                          width="100%"
-                          style={fullHeight}
-                >
-                    <h1>Hi I'm Ido,</h1>
-                    <h2>I make imaginary ideas come true</h2>
-                </FlexView>
-
-                <FlexView className="projects section" width="100%" style={fullHeight}>
-                    <FlexView className="row half">
-                        <Project name="Feelboard"
-                                 tags="Deep Learning, AI, Computer Vision"
-                                 color="lightgray"
-                                 alias="feelboard"/>
+                <FlexView grow column className="homepage" width="100%">
+                    <FlexView column className="banner section"
+                              hAlignContent="center"
+                              vAlignContent="center"
+                              width="100%"
+                              style={fullHeight}
+                    >
+                        <h1>Hi, I'm Ido</h1>
+                        <h2>I bring technological ideas to life</h2>
                     </FlexView>
 
-                    <FlexView column className="half">
-                        <FlexView className="row" height="50%">
-                            <Project name="Storyline.ai"
-                                     tags="Deep Learning, NLP, Generation"
+                    <FlexView className="projects section" width="100%" style={fullHeight}>
+                        <FlexView className="row half">
+                            <Project name="Feelboard"
+                                     tags="Deep Learning, AI, Computer Vision"
+                                     color="red"
+                                     alias="feelboard"/>
+                        </FlexView>
+
+                        <FlexView column className="half">
+                            <FlexView className="row" height="50%">
+                                <Project name="Storyline.ai"
+                                         tags="Deep Learning, NLP, Generation"
+                                         color="black"
+                                         alias="storyline" />
+                            </FlexView>
+                            <FlexView className="row" height="50%">
+                                <Project name="Meezi"
+                                         tags="Social app, iOS, Android"
+                                         color="blue"
+                                         alias="meezi"/>
+                            </FlexView>
+                        </FlexView>
+                    </FlexView>
+
+                    <FlexView className="projects section" width="100%" style={fullHeight}>
+                        <FlexView className="row half">
+                            <Project name="Rosette Text Analyzer"
+                                     tags="NLP, Machine Learning, Entity Extraction"
                                      color="gray"
-                                     alias="storyline" />
+                                     alias="rosette"/>
                         </FlexView>
-                        <FlexView className="row" height="50%">
-                            <Project name="Meezi"
-                                     tags="Social app, iOS, Android"
-                                     color="darkgray"
-                                     alias="meezi"/>
+
+                        <FlexView column className="half">
+                            <FlexView className="row" height="50%">
+                                <Project name="Bo Nariv"
+                                         tags="Politics, Chat app"
+                                         color="lightgray"
+                                         alias="bonariv" />
+                            </FlexView>
+                            <FlexView className="row" height="50%">
+                                <Project name="MotionSense"
+                                         tags="Research, Signal Analysis"
+                                         color="darkgray"
+                                         alias="motionsense"/>
+                            </FlexView>
                         </FlexView>
                     </FlexView>
+
                 </FlexView>
-
-                <FlexView className="projects section" width="100%" style={fullHeight}>
-                    <FlexView className="row half">
-                        <Project name="Rosette Text Analyzer"
-                                 tags="NLP, Machine Learning, Entity Extraction"
-                                 color="gray"
-                                 alias="rosette"/>
-                    </FlexView>
-
-                    <FlexView column className="half">
-                        <FlexView className="row" height="50%">
-                            <Project name="Bo Nariv"
-                                     tags="Politics, Chat app"
-                                     color="lightgray"
-                                     alias="bonariv" />
-                        </FlexView>
-                        <FlexView className="row" height="50%">
-                            <Project name="MotionSense"
-                                     tags="Research, Signal Analysis"
-                                     color="darkgray"
-                                     alias="motionsense"/>
-                        </FlexView>
-                    </FlexView>
-                </FlexView>
-
-            </FlexView>
         );
     }
 

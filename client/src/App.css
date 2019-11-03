@@ -38,6 +38,7 @@ h1, h2, h3, h4 {
     position: fixed;
     left: 20px;
     top: 20px;
+    z-index: 3;
 }
 
 .sticky-header a, .sticky-header a:hover {

@@ -2,6 +2,7 @@
     width: 100%;
     cursor: pointer;
     padding: 0 5px;
+    position: relative;
 }
 
 .project h3 {
@@ -14,4 +15,21 @@
     font-size: 12px;
     font-weight: 300;
     text-align: center;
+}
+
+.project .thumb {
+    width: 100%;
+    height: 101%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    opacity: 0;
+}
+
+.project:hover .thumb {
+    transition: opacity 7s;
+    opacity: .5;
 }
