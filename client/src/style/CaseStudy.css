@@ -1,0 +1,57 @@
+.case-study .header {
+    background-size: cover;
+}
+
+.case-study .header .headline {
+    padding: 20px;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+}
+
+.case-study .headline h1 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.case-study .headline h2 {
+    color: #eee;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.case-study .case-section {
+    position: relative;
+}
+
+.case-study .case-section .case-image {
+    position: absolute;
+    width: 48%;
+    top: 0;
+    left: 52%;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.case-study .case-section .image {
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center left;
+}
+
+.case-study .case-section .info {
+    padding: 0 0 0 50px;
+}
+
+.case-study .case-section h2 {
+    font-size: 48px;
+}
+
+.case-study .case-section p {
+    font-size: 24px;
+    color: #636363;
+    line-height: 40px;
+}

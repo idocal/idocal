@@ -1,0 +1,41 @@
+.banner {
+    background: #D5D5D5;
+    padding: 0 15px;
+}
+
+.banner h1 {
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+}
+
+.banner h2 {
+    color: #000;
+    font-size: 36px;
+    text-align: center;
+}
+
+.lightgray {
+    background-color: #f5f5f5;
+    color: #636363;
+}
+
+.gray {
+    background-color: #8f8f8f;
+    color: #fff;
+}
+
+.darkgray {
+    background-color: #636363;
+    color: #fff;
+}
+
+.projects {
+    min-height: 100%;
+}
+
+.half {
+    width: 50%;
+}
+
+
