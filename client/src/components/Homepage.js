@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../style/Homepage.css';
 import FlexView from 'react-flexview';
 import Project from "./Project";
+import FullPage from './FullPage';
+import Video from '../images/vid.mp4';
 
 export default class Homepage extends Component {
 
@@ -31,6 +33,7 @@ export default class Homepage extends Component {
         const fullHeight = {minHeight: this.state.windowHeight + "px"};
         return (
                 <FlexView grow column className="homepage" width="100%">
+                    <FullPage>
                     <FlexView column className="banner section"
                               hAlignContent="center"
                               vAlignContent="center"
@@ -69,7 +72,7 @@ export default class Homepage extends Component {
                         <FlexView className="row half">
                             <Project name="Rosette Text Analyzer"
                                      tags="NLP, Machine Learning, Entity Extraction"
-                                     color="gray"
+                                     color="black"
                                      alias="rosette"/>
                         </FlexView>
 
@@ -88,8 +91,8 @@ export default class Homepage extends Component {
                             </FlexView>
                         </FlexView>
                     </FlexView>
-
-                </FlexView>
+            </FullPage>
+            </FlexView>
         );
     }
 

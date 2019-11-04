@@ -7,11 +7,11 @@ import CaseStudy from "./components/CaseStudy";
 function AppRouter() {
     return (
         <Router>
-            <div className="sticky-header">
-                <Link to='/'>
-                    <h1>idocal</h1>
-                </Link>
-            </div>
+            {/*<div className="sticky-header">*/}
+            {/*    <Link to='/'>*/}
+            {/*        <h1>idocal</h1>*/}
+            {/*    </Link>*/}
+            {/*</div>*/}
             <Route path="/" exact component={Homepage} />
             <Route path="/work/:project" component={CaseStudy} />
         </Router>

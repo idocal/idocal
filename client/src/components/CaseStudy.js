@@ -3,6 +3,7 @@ import FlexView from 'react-flexview';
 import '../style/CaseStudy.css';
 import { projects } from "../config";
 import Project from "./Project";
+import FullPage from "./FullPage";
 
 export default class CaseStudy extends Component {
     state = {
@@ -47,6 +48,7 @@ export default class CaseStudy extends Component {
         const sections = projects[project].sections;
 
         return (
+            <FullPage>
             <div ref={this.myRef}>
                 <FlexView grow column className="case-study" width="100%">
                     <FlexView className="section header"
@@ -110,6 +112,7 @@ export default class CaseStudy extends Component {
 
                 </FlexView>
             </div>
+            </FullPage>
         )
     }
 

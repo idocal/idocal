@@ -56,6 +56,20 @@
     width: 50%;
 }
 
+.webCaptionContainer {
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.webCaption {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
 @media only screen and (min-width: 580px) {
     .banner h1 {
         color: #fff;

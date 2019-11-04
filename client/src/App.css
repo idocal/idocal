@@ -27,7 +27,7 @@ h1, h2, h3, h4 {
 .fp-tableCell {
     box-sizing: border-box;
     width: 100%;
-    display: inherit;
+    display: inherit !important;
     flex-flow: inherit;
     flex: inherit;
     justify-content: inherit;
