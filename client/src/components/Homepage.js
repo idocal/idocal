@@ -3,7 +3,6 @@ import '../style/Homepage.css';
 import FlexView from 'react-flexview';
 import Project from "./Project";
 import FullPage from './FullPage';
-import Video from '../images/vid.mp4';
 
 export default class Homepage extends Component {
 

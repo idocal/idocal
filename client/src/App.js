@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import FlexView from 'react-flexview';
 import './App.css';
 import AppRouter from "./AppRouter";
-import ReactFullpage from '@fullpage/react-fullpage';
 
 
 export default class App extends Component {
