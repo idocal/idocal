@@ -6,30 +6,7 @@ import FullPage from './FullPage';
 
 export default class Homepage extends Component {
 
-    state = {
-        windowHeight: 0
-    };
-
-    constructor(props) {
-        super(props);
-        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-    }
-
-    componentDidMount() {
-        this.updateWindowDimensions();
-        window.addEventListener('resize', this.updateWindowDimensions);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.updateWindowDimensions);
-    }
-
-    updateWindowDimensions() {
-        this.setState({ windowHeight: window.innerHeight });
-    }
-
     render() {
-        const fullHeight = {minHeight: this.state.windowHeight + "px"};
         return (
                 <FlexView grow column className="homepage" width="100%">
                     <FullPage>
@@ -37,13 +14,12 @@ export default class Homepage extends Component {
                               hAlignContent="center"
                               vAlignContent="center"
                               width="100%"
-                              style={fullHeight}
                     >
                         <h1>Hi, I'm Ido</h1>
                         <h2>I bring technological ideas to life</h2>
                     </FlexView>
 
-                    <FlexView className="projects section" width="100%" style={fullHeight}>
+                    <FlexView className="projects section" width="100%">
                         <FlexView className="row half">
                             <Project name="Feelboard"
                                      tags="Deep Learning, AI, Computer Vision"
@@ -67,7 +43,7 @@ export default class Homepage extends Component {
                         </FlexView>
                     </FlexView>
 
-                    <FlexView className="projects section" width="100%" style={fullHeight}>
+                    <FlexView className="projects section" width="100%">
                         <FlexView className="row half">
                             <Project name="Rosette Text Analyzer"
                                      tags="NLP, Machine Learning, Entity Extraction"

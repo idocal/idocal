@@ -8,7 +8,7 @@ export default class App extends Component {
     render() {
 
         return (
-            <FlexView id="fullpage" className="app" height="100%">
+            <FlexView className="app" height="100%">
                 <AppRouter />
             </FlexView>
         );

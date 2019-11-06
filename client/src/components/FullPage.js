@@ -8,7 +8,8 @@ export default ({ children }) => (
         scrollingSpeed = {scrollingSpeed}
         dragAndMove={true}
         fadingEffect={true}
-        render={() => {
+        licenseKey={'0410E3D2-5EAB4F1A-BA2F2B25-070147F7'}
+        render={(state, fullpageApi) => {
             return (
                 <ReactFullpage.Wrapper>
                     {children}

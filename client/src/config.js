@@ -13,5 +13,16 @@ export const projects = {
                 'text': 'Rosette Text Analyzer puts together the entire solution space into a one-click experience! Pick any text and analyze it immediately.'
             }
         ]
+    },
+    'meezi': {
+        'name': "Meezi",
+        'tags': ["Social app", "Mobile app"],
+        'roles': ["Co-founder", "CTO"],
+        'sections': [
+            {
+                'title': 'Meeting up made easy',
+                'text': 'With Meezi you meet up with friends'
+            }
+        ]
     }
 };
