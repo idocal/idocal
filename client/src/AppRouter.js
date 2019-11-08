@@ -6,6 +6,7 @@ import FlexView from "react-flexview/lib/FlexView";
 import LogoBright from "./images/logo-bright@2x.png";
 import { slide as Menu } from 'react-burger-menu'
 import CrossIcon from './images/cross@2x.png';
+import About from './components/About';
 
 const onClick = () => {
     if (document.getElementById('fullpage')) {
@@ -33,8 +34,10 @@ function AppRouter() {
                     </Menu>
                 </FlexView>
             </FlexView>
+
             <Route path="/" exact component={Homepage} />
             <Route path="/work/:project" component={CaseStudy} />
+            <Route path="/about" exact component={About} />
         </Router>
     )
 }

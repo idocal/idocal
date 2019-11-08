@@ -1,0 +1,41 @@
+.about .section {
+    flex-flow: column wrap !important;
+}
+
+.about .half {
+    min-width: 100% !important;
+    min-height: 50% !important;
+}
+
+.about .profile {
+    background-image: url('../images/profile.jpg');
+    background-size: cover;
+}
+
+.about .text {
+    padding: 0 20px;
+    min-width: 100% !important;
+    line-height: 30px;
+    text-align: center;
+}
+
+.about .text p {
+    color: #868686;
+}
+
+@media only screen and (min-width: 580px) {
+
+    .about .section{
+        flex-flow: row-reverse wrap !important;
+    }
+
+    .about .half {
+        min-width: 50% !important;
+        min-height: 100% !important;
+    }
+
+    .about .text {
+        padding: 0 40px;
+        text-align: left;
+    }
+}
