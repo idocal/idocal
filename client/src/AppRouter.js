@@ -7,6 +7,7 @@ import LogoBright from "./images/logo-bright@2x.png";
 import { slide as Menu } from 'react-burger-menu'
 import CrossIcon from './images/cross@2x.png';
 import About from './components/About';
+import Contact from './components/Contact';
 
 const onClick = () => {
     if (document.getElementById('fullpage')) {
@@ -38,6 +39,7 @@ function AppRouter() {
             <Route path="/" exact component={Homepage} />
             <Route path="/work/:project" component={CaseStudy} />
             <Route path="/about" exact component={About} />
+            <Route path="/contact" exact component={Contact} />
         </Router>
     )
 }

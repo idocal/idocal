@@ -10,6 +10,7 @@
 .about .profile {
     background-image: url('../images/profile.jpg');
     background-size: cover;
+    background-position: center;
 }
 
 .about .text {
@@ -21,6 +22,23 @@
 
 .about .text p {
     color: #868686;
+}
+
+.about .text p a {
+    text-decoration: none;
+    color: #0253fd;
+}
+
+.about .text p strong {
+    font-weight: 700;
+}
+
+.about .text p a:hover {
+    text-decoration: underline;
+}
+
+.about .text p a:visited {
+    color: #0253fd;
 }
 
 @media only screen and (min-width: 580px) {

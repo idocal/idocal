@@ -1,0 +1,65 @@
+.form {
+    width: 100%;
+    height: 100%;
+}
+
+.form p, .sent p {
+    color: #636363;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.form .form-controls {
+    width: 100%;
+    max-width: 700px;
+}
+
+.form form {
+    width: 100%;
+    padding: 20px;
+}
+
+.form .form-controls label {
+    display: block;
+    margin-top: 30px;
+}
+
+.form .form-controls input {
+    border: none;
+    border-bottom: 2px solid #636363;
+    outline: none;
+    font-size: 30px;
+    width: 100%;
+}
+
+.form .form-controls textarea {
+    border: none;
+    width: 100%;
+    min-width: 100%;
+    font-size: 24px;
+    resize: none;
+}
+
+.form .form-controls textarea:active, .form .form-controls textarea:focus {
+    border: none;
+    outline: none;
+}
+
+.form .form-controls button, .sent button {
+    border: 1px solid #636363;
+    color: #636363;
+    padding: 10px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.form .form-controls button:hover, .sent button:hover {
+    color: white;
+    background: #000;
+    transition: all .2s;
+}
+
+.sent button {
+    margin-top: 50px;
+}

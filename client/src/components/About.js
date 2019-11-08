@@ -15,7 +15,7 @@ function About() {
                         <p>
                             Hi again! My name is Ido Calman, I’m a 27 years old developer, designer and AI researcher from Tel Aviv.
                             I create projects which embrace the latest advances in Machine and Deep Learning in order to improve people’s lives.
-                            I consider myself a one-stop-shop, turning any idea into a beautiful, functioning and fun product.
+                            I consider myself a <strong>one-stop-shop</strong>, turning any idea into a beautiful, functioning and fun product.
                             Interested in hearing more? Please feel free to <Link to="/contact">contact me!</Link>
                         </p>
                     </FlexView>
