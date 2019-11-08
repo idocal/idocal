@@ -6,7 +6,6 @@ import FullPage from './FullPage';
 import Video from '../images/header_1024.mp4';
 
 export default class Homepage extends Component {
-
     render() {
         return (
                 <FlexView grow column className="homepage" width="100%">
@@ -16,7 +15,7 @@ export default class Homepage extends Component {
                               vAlignContent="center"
                               width="100%"
                     >
-                        <video loop autoPlay={true} data-keepplaying>
+                        <video loop autoPlay data-keepplaying muted>
                             <source src={Video} type='video/mp4' />
                         </video>
                         <div className="header-slogan">

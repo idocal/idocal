@@ -3,6 +3,7 @@ export const projects = {
         'name': "Rosette Text Analyzer",
         'tags': ["NLP", "Machine Learning", "Entity Extraction"],
         'roles': ["Solo implementation", "Research"],
+        'url': 'https://try.rosette.com',
         'sections': [
             {
                 'title': 'All-in-one NLP analyzer',
@@ -18,10 +19,59 @@ export const projects = {
         'name': "Meezi",
         'tags': ["Social app", "Mobile app"],
         'roles': ["Co-founder", "CTO"],
+        'url': 'http://meezi.me',
         'sections': [
             {
                 'title': 'Meeting up made easy',
                 'text': 'With Meezi you meet up with friends'
+            }
+        ]
+    },
+    'feelboard': {
+        'name': "Feelboard",
+        'tags': ["AI", "Computer Vision"],
+        'roles': ["Solo project", "Research", "Implementation", "Design"],
+        'url': 'https://feelboard.ai',
+        'sections': [
+            {
+                'title': 'Feelboard everywhere',
+                'text': 'text about feelboard'
+            }
+        ]
+    },
+    'bonariv': {
+        'name': "Bo Nariv (Let's Argue)",
+        'tags': ["Politics", "Chat app"],
+        'roles': ["Solo project", "Design", "Implementation"],
+        'url': 'https://bonariv.com',
+        'sections': [
+            {
+                'title': 'Bo Nariv',
+                'text': 'text about bonariv'
+            }
+        ]
+    },
+    'storyline': {
+        'name': "Storyline.ai",
+        'tags': ["NLP", "Language Generation"],
+        'roles': ["Solo project", "Research", "Design"],
+        'url': 'https://storylines.appspot.com',
+        'sections': [
+            {
+                'title': 'Storyline.ai',
+                'text': 'text about storyline'
+            }
+        ]
+    },
+    'motionsense': {
+        'name': "MotionSense",
+        'tags': ["Machine Learning", "Signal Analysis"],
+        'roles': ["Research", "Algorithm Design", "Data Mining"],
+        'url': 'https://github.com/idocal/workshop',
+        'sections': [
+            {
+                'title': 'MotionSense',
+                'text': 'text about motionsense'
             }
         ]
     }
