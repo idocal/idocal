@@ -4,8 +4,6 @@ import '../style/CaseStudy.css';
 import { projects } from "../config";
 import Project from "./Project";
 import ReactFullpage from "@fullpage/react-fullpage";
-import RosetteHeader from '../images/rosette-header.jpg';
-import MeeziHeader from '../images/meezi-header.jpg';
 
 export default class CaseStudy extends Component {
     state = {
