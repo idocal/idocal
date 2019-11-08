@@ -3,6 +3,7 @@ import '../style/Homepage.css';
 import FlexView from 'react-flexview';
 import Project from "./Project";
 import FullPage from './FullPage';
+import Video from '../images/header_1024.mp4';
 
 export default class Homepage extends Component {
 
@@ -15,8 +16,15 @@ export default class Homepage extends Component {
                               vAlignContent="center"
                               width="100%"
                     >
-                        <h1>Hi, I'm Ido</h1>
-                        <h2>I bring technological ideas to life</h2>
+                        <video loop autoPlay={true} data-keepplaying>
+                            <source src={Video} type='video/mp4' />
+                        </video>
+                        <div className="header-slogan">
+                            <FlexView vAlignContent="center" column height="100%">
+                                <h1>Hi, I'm Ido</h1>
+                                <h2>I bring technological ideas to life</h2>
+                            </FlexView>
+                        </div>
                     </FlexView>
 
                     <FlexView className="projects section" width="100%">
