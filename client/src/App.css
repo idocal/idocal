@@ -24,6 +24,11 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
+a:hover, a:focus, a:active {
+    outline: none;
+    border: none;
+}
+
 .fp-tableCell {
     box-sizing: border-box;
     width: 100%;
@@ -49,4 +54,20 @@ h1, h2, h3, h4 {
 
 #fullpage {
     width: 100%;
+}
+
+.logo-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 9;
+    padding: 0 30px;
+    background: none;
+}
+
+.logo-bar img {
+    height: 30px;
+    width: auto;
 }

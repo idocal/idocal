@@ -8,8 +8,8 @@ import Video from '../images/header_1024.mp4';
 export default class Homepage extends Component {
     render() {
         return (
-                <FlexView grow column className="homepage" width="100%">
-                    <FullPage>
+            <FlexView grow column className="homepage" width="100%">
+                <FullPage>
                     <FlexView column className="banner section"
                               hAlignContent="center"
                               vAlignContent="center"
@@ -73,7 +73,7 @@ export default class Homepage extends Component {
                             </FlexView>
                         </FlexView>
                     </FlexView>
-            </FullPage>
+                </FullPage>
             </FlexView>
         );
     }
