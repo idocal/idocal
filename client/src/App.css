@@ -91,6 +91,7 @@ button:hover, button:focus, button:active{
 .bm-burger-bars-hover {
     background: #8FF6FF;
     opacity: 1 !important;
+    transition: all 1s;
 }
 
 /* Position and sizing of clickable cross button */
@@ -152,6 +153,18 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .bm-menu nav a:hover {
     color: #F522D5;
+}
+
+.secondary {
+    margin-top: 40px;
+}
+
+.menu-item.secondary-item {
+    color: #868686;
+    font-weight: 500;
+    font-size: 20px;
+    height: 30px;
+    display: block;
 }
 
 @media only screen and (min-width: 580px) {

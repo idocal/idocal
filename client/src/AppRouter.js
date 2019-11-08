@@ -26,6 +26,10 @@ function AppRouter() {
                         <a id="home" className="menu-item" href="/">Home</a>
                         <a id="about" className="menu-item" href="/about">About</a>
                         <a id="contact" className="menu-item" href="/contact">Contact</a>
+                        <div className="secondary">
+                            <a className="menu-item secondary-item" href="https://www.linkedin.com/in/idocal/" target="_blank">LiknedIn</a>
+                            <a className="menu-item secondary-item" href="https://github.com/idocal" target="_blank">GitHub</a>
+                        </div>
                     </Menu>
                 </FlexView>
             </FlexView>
