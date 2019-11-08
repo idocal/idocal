@@ -43,7 +43,7 @@ const accessToken = oauth2Client.getAccessToken();
   });
 
   let title = 'A message from ' + req.body.name;
-  let message = 'Message: ' + req.body.message + '<br />' + "From: " + req.body.message;
+  let message = 'Message: ' + req.body.message + '<br />' + "From: " + req.body.email;
 
   let mailOptions = {
     // should be replaced with real recipient's account
