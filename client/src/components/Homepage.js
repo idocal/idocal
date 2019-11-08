@@ -5,6 +5,7 @@ import Project from "./Project";
 import FullPage from './FullPage';
 import Video from '../images/header_1024.mp4';
 
+
 export default class Homepage extends Component {
     render() {
         return (

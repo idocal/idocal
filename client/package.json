@@ -5,6 +5,7 @@
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.16",
     "react": "^16.11.0",
+    "react-burger-menu": "^2.6.11",
     "react-dom": "^16.11.0",
     "react-flexview": "^4.0.4",
     "react-fullpage": "^0.1.19",
