@@ -24,13 +24,13 @@ function AppRouter() {
                         <img src={LogoBright} alt="idocal" onClick={onClick} />
                     </Link>
                     <Menu right width="100%"
-                          customCrossIcon={ <img src={CrossIcon} /> }>
+                          customCrossIcon={ <img src={CrossIcon} alt="close" /> }>
                         <a id="home" className="menu-item" href="/">Home</a>
                         <a id="about" className="menu-item" href="/about">About</a>
                         <a id="contact" className="menu-item" href="/contact">Contact</a>
                         <div className="secondary">
-                            <a className="menu-item secondary-item" href="https://www.linkedin.com/in/idocal/" target="_blank">LiknedIn</a>
-                            <a className="menu-item secondary-item" href="https://github.com/idocal" target="_blank">GitHub</a>
+                            <a className="menu-item secondary-item" href="https://www.linkedin.com/in/idocal/" target="_blank" rel="noopener noreferrer">LiknedIn</a>
+                            <a className="menu-item secondary-item" href="https://github.com/idocal" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </div>
                     </Menu>
                 </FlexView>
