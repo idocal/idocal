@@ -34,6 +34,22 @@
     position: relative;
 }
 
+.case-study .live button {
+    background: none;
+    border: 1px solid #000;
+    font-size: 36px;
+    padding: 20px 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.case-study .live button:hover {
+    background: #000;
+    color: #fff;
+    transition: all .2s;
+}
+
 .case-study .case-section .case-image {
     width: 100%;
     height: 50%;
@@ -118,7 +134,23 @@ ROSETTE
     color: #C0C4D8;
 }
 
+.rosette-section-4 .background {
+    background-image: url('../images/rosette-section-4.png');
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: top center;
+}
+
+.case-section.rosette-section-4 .info {
+    padding: 40px 15px 0 15px;
+}
+
 @media only screen and (min-width: 760px) {
+    .case-study .live button {
+        font-size: 60px;
+    }
+
     .case-study .case-section p {
         text-align: left;
     }
@@ -159,5 +191,7 @@ ROSETTE
         max-width: 600px;
     }
 
-
+    .rosette-section-4 .background {
+        height: 75%;
+    }
 }

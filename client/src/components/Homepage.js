@@ -4,7 +4,7 @@ import FlexView from 'react-flexview';
 import Project from "./Project";
 import FullPage from './FullPage';
 import Video from '../images/header_1024.mp4';
-
+import { projects } from "../config";
 
 export default class Homepage extends Component {
     render() {
@@ -29,48 +29,48 @@ export default class Homepage extends Component {
 
                     <FlexView className="projects section" width="100%">
                         <FlexView className="row half">
-                            <Project name="Feelboard"
-                                     tags="Deep Learning, AI, Computer Vision"
-                                     color="red"
-                                     alias="feelboard"/>
+                            <Project name={projects['feelboard'].name}
+                                     tags={projects['feelboard'].tags.join(", ")}
+                                     color={projects['feelboard'].color}
+                                     alias='feelboard' />
                         </FlexView>
 
                         <FlexView column className="half">
                             <FlexView className="row" height="50%">
-                                <Project name="Storyline.ai"
-                                         tags="Deep Learning, NLP, Generation"
-                                         color="black"
-                                         alias="storyline" />
+                                <Project name={projects['storyline'].name}
+                                         tags={projects['storyline'].tags.join(", ")}
+                                         color={projects['storyline'].color}
+                                         alias='storyline' />
                             </FlexView>
                             <FlexView className="row" height="50%">
-                                <Project name="Meezi"
-                                         tags="Social app, iOS, Android"
-                                         color="blue"
-                                         alias="meezi"/>
+                                <Project name={projects['bonariv'].name}
+                                         tags={projects['bonariv'].tags.join(", ")}
+                                         color={projects['bonariv'].color}
+                                         alias='bonariv' />
                             </FlexView>
                         </FlexView>
                     </FlexView>
 
                     <FlexView className="projects section" width="100%">
                         <FlexView className="row half">
-                            <Project name="Rosette Text Analyzer"
-                                     tags="NLP, Machine Learning, Entity Extraction"
-                                     color="black"
-                                     alias="rosette"/>
+                            <Project name={projects['rosette'].name}
+                                     tags={projects['rosette'].tags.join(", ")}
+                                     color={projects['rosette'].color}
+                                     alias='rosette' />
                         </FlexView>
 
                         <FlexView column className="half">
                             <FlexView className="row" height="50%">
-                                <Project name="Bo Nariv"
-                                         tags="Politics, Chat app"
-                                         color="lightgray"
-                                         alias="bonariv" />
+                                <Project name={projects['meezi'].name}
+                                         tags={projects['meezi'].tags.join(", ")}
+                                         color={projects['meezi'].color}
+                                         alias='meezi' />
                             </FlexView>
                             <FlexView className="row" height="50%">
-                                <Project name="MotionSense"
-                                         tags="Research, Signal Analysis"
-                                         color="darkgray"
-                                         alias="motionsense"/>
+                                <Project name={projects['motionsense'].name}
+                                         tags={projects['motionsense'].tags.join(", ")}
+                                         color={projects['motionsense'].color}
+                                         alias='motionsense' />
                             </FlexView>
                         </FlexView>
                     </FlexView>

@@ -49,8 +49,20 @@ function Rosette(props) {
 
         </FlexView>;
 
+    const section4 =
+        <FlexView column className="case-section rosette-section-4" width="100%" height="100%">
 
-    const sections = [section1, section2, section3];
+            <FlexView column className="info center">
+                <h2>{project.sections[3].title}</h2>
+                <p className="center">{project.sections[3].text}</p>
+            </FlexView>
+
+            <div className="background" />
+
+        </FlexView>;
+
+
+    const sections = [section1, section2, section3, section4];
     return (
         sections.map((section, i) => {
             return (

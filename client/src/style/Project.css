@@ -37,3 +37,55 @@
     opacity: .5;
     transform: scale(1.2);
 }
+
+.red {
+    background-color: rgb(164, 35, 52);
+    color: #fff;
+}
+
+.black {
+    background-color: rgb(27, 27, 28);
+    color: #fff;
+}
+
+.blue {
+    background-color: rgb(2, 83, 253);
+    color: #fff;
+}
+
+.lightgray {
+    background-color: #f5f5f5;
+    color: #636363;
+}
+
+.gray {
+    background-color: #8f8f8f;
+    color: #fff;
+}
+
+.darkgray {
+    background-color: #4B4E5D;
+    color: #fff;
+}
+
+.purple {
+    background-color: #160729;
+    color: #fff;
+}
+
+.royalblue {
+    background-color: #2D0E87;
+    color: #fff;
+}
+
+@media only screen and (min-width: 580px) {
+    .project h3 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .project h4 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}

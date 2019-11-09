@@ -6,6 +6,7 @@ import Project from "./Project";
 import FullPage from "./FullPage";
 import Rosette from "./Rosette";
 import Feelboard from "./Feelboard";
+import {Link} from "react-router-dom";
 
 const projectsMap = {
     'rosette': <Rosette />,
@@ -17,7 +18,8 @@ export default class CaseStudy extends Component {
         project: null,
         name: null,
         roles: [],
-        sections: []
+        sections: [],
+        url: '/'
     };
 
     async componentDidMount() {
@@ -26,7 +28,8 @@ export default class CaseStudy extends Component {
             project,
             name: projects[project].name,
             roles: projects[project].roles.join(", "),
-            sections: projects[project].sections
+            sections: projects[project].sections,
+            url: projects[project].url
         });
     }
 
@@ -37,7 +40,8 @@ export default class CaseStudy extends Component {
                 project,
                 name: projects[project].name,
                 roles: projects[project].roles.join(", "),
-                sections: projects[project].sections
+                sections: projects[project].sections,
+                url: projects[project].url
             });
         }
     }
@@ -59,19 +63,25 @@ export default class CaseStudy extends Component {
 
                     { projectsMap[this.state.project] }
 
+                    <FlexView className="section live" width="100%" height="100%" hAlignContent="center" vAlignContent="center">
+                        <a href={this.state.url} target="_blank" rel="noopener noreferrer">
+                            <button className="live">Check it live</button>
+                        </a>
+                    </FlexView>
+
                     <FlexView className="projects section" width="100%">
                         <FlexView className="row half">
-                            <Project name="Rosette"
-                                     tags="Deep Learning, AI, Computer Vision"
-                                     color="lightgray"
-                                     alias="rosette"/>
+                            <Project name={projects['rosette'].name}
+                                     tags={projects['rosette'].tags.join(", ")}
+                                     color={projects['rosette'].color}
+                                     alias='rosette' />
                         </FlexView>
 
                         <FlexView className="row half">
-                            <Project name="Meezi"
-                                     tags="Social app"
-                                     color="darkgray"
-                                     alias="meezi"/>
+                            <Project name={projects['meezi'].name}
+                                     tags={projects['meezi'].tags.join(", ")}
+                                     color={projects['meezi'].color}
+                                     alias='meezi' />
                         </FlexView>
                     </FlexView>
 
