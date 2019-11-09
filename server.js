@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const nodeMailer = require('nodemailer');
 const { google } = require("googleapis");
 const OAuth2 = google.auth.OAuth2;
-const { credentials } = require("./credentials");
+const { init } = require("./init");
 
 // [START gae_node_request_example]
 
@@ -16,16 +16,16 @@ app.use(express.static(path.join(__dirname, 'client', 'build')));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-const { email, clientId, clientSecret, refreshToken } = credentials;
+const { email, c, s, r } = init;
 
 const oauth2Client = new OAuth2(
-    clientId,
-    clientSecret,
+    c,
+    s,
     "https://developers.google.com/oauthplayground"
 );
 
 oauth2Client.setCredentials({
-  refresh_token: refreshToken
+  refresh_token: r
 });
 const accessToken = oauth2Client.getAccessToken();
 
@@ -35,9 +35,9 @@ const accessToken = oauth2Client.getAccessToken();
     'auth': {
       type: "OAuth2",
       user: email,
-      clientId: clientId,
-      clientSecret: clientSecret,
-      refreshToken: refreshToken,
+      clientId: c,
+      clientSecret: s,
+      refreshToken: r,
       accessToken: accessToken
     }
   });
