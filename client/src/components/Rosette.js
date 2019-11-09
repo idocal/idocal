@@ -37,8 +37,8 @@ function Rosette(props) {
         <FlexView column className="case-section half rosette-section-3" width="100%" height="100%">
 
             <FlexView className="case-video half" hAlignContent="center" vAlignContent="center">
-                <video autoPlay={true} muted loop className="video">
-                    <source src={VidSection3} />
+                <video autoPlay={true} muted loop className="video" data-keepplaying>
+                    <source src={VidSection3} type="video/mp4"/>
                 </video>
             </FlexView>
 
