@@ -6,7 +6,6 @@ import Project from "./Project";
 import FullPage from "./FullPage";
 import Rosette from "./Rosette";
 import Feelboard from "./Feelboard";
-import {Link} from "react-router-dom";
 
 const projectsMap = {
     'rosette': <Rosette />,
@@ -51,7 +50,7 @@ export default class CaseStudy extends Component {
             <FlexView grow column className={"case-study " + this.state.project} width="100%">
                 <FullPage>
 
-                    <FlexView className={"section header"}
+                    <FlexView className="section header logomode-bright"
                               width="100%"
                               vAlignContent="bottom">
                         <FlexView column className="headline">
@@ -63,13 +62,13 @@ export default class CaseStudy extends Component {
 
                     { projectsMap[this.state.project] }
 
-                    <FlexView className="section live" width="100%" height="100%" hAlignContent="center" vAlignContent="center">
+                    <FlexView className="section live logomode-dark" width="100%" height="100%" hAlignContent="center" vAlignContent="center">
                         <a href={this.state.url} target="_blank" rel="noopener noreferrer">
                             <button className="live">Check it live</button>
                         </a>
                     </FlexView>
 
-                    <FlexView className="projects section" width="100%">
+                    <FlexView className="projects section logomode-bright" width="100%">
                         <FlexView className="row half">
                             <Project name={projects['rosette'].name}
                                      tags={projects['rosette'].tags.join(", ")}

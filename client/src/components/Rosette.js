@@ -8,7 +8,7 @@ const project = projects['rosette'];
 
 function Rosette(props) {
     const section1 =
-        <FlexView column className="case-section rosette-section-1" width="100%" height="100%">
+        <FlexView column className="case-section rosette-section-1 logomode-dark" width="100%" height="100%">
 
             <FlexView column className="info center">
                 <h2>{project.sections[0].title}</h2>
@@ -62,11 +62,29 @@ function Rosette(props) {
         </FlexView>;
 
 
-    const sections = [section1, section2, section3, section4];
+    const sections = [
+        {
+            section: section1,
+            mode: 'logomode-dark',
+        },
+        {
+            section: section2,
+            mode: 'logomode-dark',
+        },
+        {
+            section: section3,
+            mode: 'logomode-bright',
+        },
+        {
+            section: section4,
+            mode: 'logomode-dark',
+        }
+    ];
+
     return (
-        sections.map((section, i) => {
+        sections.map(({section, mode}, i) => {
             return (
-                <FlexView className="section" column key={i}>
+                <FlexView className={"section " + mode} column key={i}>
                     { section }
                 </FlexView>
             )

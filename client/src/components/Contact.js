@@ -20,6 +20,10 @@ export default class Contact extends Component {
         message: ''
     };
 
+    componentDidMount() {
+        this.props.changeLogoMode('dark');
+    }
+
     async postData(url = '', data = {}) {
         // Default options are marked with *
         await fetch(url, {

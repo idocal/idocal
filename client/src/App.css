@@ -73,7 +73,21 @@ button:hover, button:focus, button:active{
     width: auto;
 }
 
-/* Position and sizing of burger button */
+.logo-bar.bright .logo-dark {
+    display: none;
+    transition: all 1s;
+}
+
+.logo-bar.dark .logo-bright {
+    display: none;
+    transition: all 1s;
+}
+
+.logo-bar.dark .bm-burger-bars {
+    background: #000;
+}
+
+    /* Position and sizing of burger button */
 .bm-burger-button {
     position: fixed;
     width: 36px;

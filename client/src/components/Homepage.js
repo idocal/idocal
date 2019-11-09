@@ -7,6 +7,10 @@ import Video from '../images/header_1024.mp4';
 import { projects } from "../config";
 
 export default class Homepage extends Component {
+    componentDidMount() {
+        this.props.changeLogoMode('bright');
+    }
+
     render() {
         return (
             <FlexView grow column className="homepage" width="100%">

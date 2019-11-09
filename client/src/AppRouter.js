@@ -4,6 +4,7 @@ import Homepage from './components/Homepage';
 import CaseStudy from "./components/CaseStudy";
 import FlexView from "react-flexview/lib/FlexView";
 import LogoBright from "./images/logo-bright@2x.png";
+import LogoDark from "./images/logo-dark@2x.png";
 import { slide as Menu } from 'react-burger-menu'
 import CrossIcon from './images/cross@2x.png';
 import About from './components/About';
@@ -15,13 +16,28 @@ const onClick = () => {
     }
 };
 
+const changeLogoMode = mode => {
+    console.log('changing logo mode to: ', mode);
+    if (document.getElementById('logo-bar')) {
+        if (mode === 'dark') {
+            document.getElementById('logo-bar').classList.remove("bright");
+            document.getElementById('logo-bar').classList.add("dark");
+        }
+        else if (mode === 'bright') {
+            document.getElementById('logo-bar').classList.remove("dark");
+            document.getElementById('logo-bar').classList.add("bright");
+        }
+    }
+};
+
 function AppRouter() {
     return (
         <Router>
-            <FlexView className="logo-bar bright">
+            <FlexView id="logo-bar" className="logo-bar bright">
                 <FlexView width="100%" height="100%" vAlignContent="center">
                     <Link to='/'>
-                        <img src={LogoBright} alt="idocal" onClick={onClick} />
+                        <img src={LogoBright} className="logo-bright" alt="idocal" onClick={onClick} />
+                        <img src={LogoDark} className="logo-dark" alt="idocal" onClick={onClick} />
                     </Link>
                     <Menu right width="100%"
                           customCrossIcon={ <img src={CrossIcon} alt="close" /> }>
@@ -36,10 +52,10 @@ function AppRouter() {
                 </FlexView>
             </FlexView>
 
-            <Route path="/" exact component={Homepage} />
+            <Route path="/" exact render={props => <Homepage {...props} changeLogoMode={changeLogoMode} /> } />
             <Route path="/work/:project" component={CaseStudy} />
-            <Route path="/about" exact component={About} />
-            <Route path="/contact" exact component={Contact} />
+            <Route path="/about" exact render={ props => <About {...props} changeLogoMode={changeLogoMode} /> } />
+            <Route path="/contact" exact render={ props => <Contact {...props} changeLogoMode={changeLogoMode} /> } />
         </Router>
     )
 }
