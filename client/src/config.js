@@ -12,6 +12,10 @@ export const projects = {
             {
                 'title': 'Gain text insights quickly',
                 'text': 'Rosette Text Analyzer puts together the entire solution space into a one-click experience! Pick any text and analyze it immediately.'
+            },
+            {
+                'title': 'Entities, Entities, Entities',
+                'text': 'A story of a complex text is usually about who are the role players in the plot. Entities can be many substances: Persons, Organizations, Locations, and more. The analyzer provides an observation beyond the functional detection of entities using co-referencing and linking to external database (like Wikipedia), those make the process of entity extraction much more vivid to the reader.'
             }
         ]
     },

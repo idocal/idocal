@@ -29,7 +29,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    opacity: 0;
+    opacity: .02;
 }
 
 .project:hover .thumb {

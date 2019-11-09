@@ -4,6 +4,13 @@ import '../style/CaseStudy.css';
 import { projects } from "../config";
 import Project from "./Project";
 import FullPage from "./FullPage";
+import Rosette from "./Rosette";
+import Feelboard from "./Feelboard";
+
+const projectsMap = {
+    'rosette': <Rosette />,
+    'feelboard': <Feelboard />,
+};
 
 export default class CaseStudy extends Component {
     state = {
@@ -37,9 +44,10 @@ export default class CaseStudy extends Component {
 
     render() {
         return (
-            <FullPage>
-                <FlexView grow column className="case-study" width="100%">
-                    <FlexView className={"section header " + this.state.project}
+            <FlexView grow column className={"case-study " + this.state.project} width="100%">
+                <FullPage>
+
+                    <FlexView className={"section header"}
                               width="100%"
                               vAlignContent="bottom">
                         <FlexView column className="headline">
@@ -49,29 +57,7 @@ export default class CaseStudy extends Component {
 
                     </FlexView>
 
-                    {
-                        this.state.sections.map((section, i) => {
-                            let imgSource = "/img/" + this.state.project + "-section-" + (i + 1).toString() + ".png";
-                            return (
-                                <FlexView key={i}
-                                          className="section case-section"
-                                          column
-                                >
-
-                                    <FlexView className="case-image" vAlignContent="center" hAlignContent="right">
-                                        <div className="image" style={{backgroundImage: 'url(' + imgSource + ')'}} />
-                                    </FlexView>
-
-                                    <FlexView column className="info" hAlignContent="left">
-                                        <h2>{section.title}</h2>
-                                        <p>{section.text}</p>
-                                    </FlexView>
-
-                                </FlexView>
-
-                            )
-                        })
-                    }
+                    { projectsMap[this.state.project] }
 
                     <FlexView className="projects section" width="100%">
                         <FlexView className="row half">
@@ -89,8 +75,9 @@ export default class CaseStudy extends Component {
                         </FlexView>
                     </FlexView>
 
-                </FlexView>
-            </FullPage>
+
+                </FullPage>
+            </FlexView>
 
         )
     }
