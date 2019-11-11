@@ -75,35 +75,35 @@ button:hover, button:focus, button:active{
 .logo-bar.bright .logo-dark {
     visibility: hidden;
     opacity: 0;
-    transition: all 1s;
+    transition: opacity 1s ease;
 }
 
 .logo-bar.bright .logo-bright {
     visibility: visible;
     opacity: 1;
-    transition: all 1s;
+    transition: opacity 1s ease;
 }
 
 .logo-bar.dark .logo-bright {
     visibility: hidden;
     opacity: 0;
-    transition: all 1s;
+    transition: opacity 1s ease;
 }
 
 .logo-bar.dark .logo-dark {
     visibility: visible;
     opacity: 1;
-    transition: all 1s;
+    transition: opacity 1s ease;
 }
 
 .logo-bar.bright #burger-button .burger-bar {
     background: #fff;
-    transition: all 1s;
+    transition: all 1s ease;
 }
 
 .logo-bar.dark #burger-button .burger-bar {
     background: #000;
-    transition: all 1s;
+    transition: all 1s ease;
 }
 
 .content {
