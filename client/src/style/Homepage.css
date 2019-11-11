@@ -26,6 +26,10 @@
     text-align: center;
 }
 
+.banner video {
+    height: 100%;
+}
+
 .projects {
     min-height: 100%;
 }
