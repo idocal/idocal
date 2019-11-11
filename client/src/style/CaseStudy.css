@@ -58,14 +58,16 @@
 }
 
 .case-study .case-section .info {
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     justify-content: center;
     height: 50%;
     width: 100%;
 }
 
 .case-study .case-section h2 {
-    font-size: 32px;
+    font-size: 24px;
+    text-align: center;
 }
 
 .case-study .case-section p {
@@ -118,8 +120,9 @@ ROSETTE
 }
 
 .rosette-section-2 .case-image img {
-    width: 400px;
+    width: 350px;
     height: auto;
+    margin-top: 100px;
 }
 
 .rosette-section-3 .info {
@@ -137,13 +140,19 @@ ROSETTE
 .rosette-section-4 .background {
     background-image: url('../images/rosette-section-4.png');
     width: 100%;
-    height: 50%;
+    height: 100%;
     background-size: cover;
     background-position: top center;
 }
 
 .case-section.rosette-section-4 .info {
-    padding: 40px 15px 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+
+.case-section.rosette-section-4 .info p {
+    font-size: 14px;
 }
 
 @media only screen and (min-width: 760px) {
@@ -161,6 +170,11 @@ ROSETTE
 
     .case-study .case-section.half {
         flex-flow: row-reverse nowrap !important;
+    }
+
+    .case-study .case-section h2 {
+        font-size: 32px;
+        text-align: left;
     }
 
     .rosette-section-1 .info p {
@@ -184,14 +198,15 @@ ROSETTE
     }
 
     .case-study .case-section .info.half {
-        padding: 0 20px 0 60px;
+        padding-left: 60px;
+        padding-right: 20px;
     }
 
     .case-study .case-section .info.half p {
         max-width: 600px;
     }
 
-    .rosette-section-4 .background {
-        height: 75%;
+    .case-section.rosette-section-4 .info p {
+        font-size: 20px;
     }
 }

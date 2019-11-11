@@ -8,7 +8,7 @@ const project = projects['rosette'];
 
 function Rosette(props) {
     const section1 =
-        <FlexView column className="case-section rosette-section-1 logomode-dark" width="100%" height="100%">
+        <FlexView column className="case-section rosette-section-1 logomode-dark content" width="100%" height="100%">
 
             <FlexView column className="info center">
                 <h2>{project.sections[0].title}</h2>
@@ -42,7 +42,7 @@ function Rosette(props) {
                 </video>
             </FlexView>
 
-            <FlexView column className="info half stretch">
+            <FlexView column className="info half stretch content">
                 <h2>{project.sections[2].title}</h2>
                 <p>{project.sections[2].text}</p>
             </FlexView>
@@ -52,12 +52,14 @@ function Rosette(props) {
     const section4 =
         <FlexView column className="case-section rosette-section-4" width="100%" height="100%">
 
-            <FlexView column className="info center">
+            <FlexView column className="info center content">
                 <h2>{project.sections[3].title}</h2>
                 <p className="center">{project.sections[3].text}</p>
             </FlexView>
 
-            <div className="background" />
+            <FlexView grow className="bg-wrapper">
+                <div className="background" />
+            </FlexView>
 
         </FlexView>;
 
@@ -84,10 +86,10 @@ function Rosette(props) {
     return (
         sections.map(({section, mode}, i) => {
             return (
-                <FlexView className={"section " + mode} column key={i}>
-                    { section }
+                <FlexView className={"section rosette " + mode} column key={i}>
+                    {section}
                 </FlexView>
-            )
+            );
         })
     )
 }
