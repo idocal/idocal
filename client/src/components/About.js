@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import FlexView from 'react-flexview';
 import '../style/About.css';
-import FullPage from "./FullPage";
 import {Link} from "react-router-dom";
 
 export default class About extends Component {

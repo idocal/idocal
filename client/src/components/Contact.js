@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import FlexView from 'react-flexview';
 import '../style/Contact.css';
-import FullPage from "./FullPage";
 import {Link} from "react-router-dom";
 
 export default class Contact extends Component {
