@@ -5,8 +5,7 @@ import CaseStudy from "./components/CaseStudy";
 import FlexView from "react-flexview/lib/FlexView";
 import LogoBright from "./images/logo-bright@2x.png";
 import LogoDark from "./images/logo-dark@2x.png";
-import { slide as Menu } from 'react-burger-menu'
-import CrossIcon from './images/cross@2x.png';
+import Menu from './components/Menu';
 import About from './components/About';
 import Contact from './components/Contact';
 
@@ -17,7 +16,6 @@ const onClick = () => {
 };
 
 const changeLogoMode = mode => {
-    console.log('changing logo mode to: ', mode);
     if (document.getElementById('logo-bar')) {
         if (mode === 'dark') {
             document.getElementById('logo-bar').classList.remove("bright");
@@ -39,16 +37,7 @@ function AppRouter() {
                         <img src={LogoBright} className="logo-bright" alt="idocal" onClick={onClick} />
                         <img src={LogoDark} className="logo-dark" alt="idocal" onClick={onClick} />
                     </Link>
-                    <Menu right width="100%"
-                          customCrossIcon={ <img src={CrossIcon} alt="close" /> }>
-                        <a id="home" className="menu-item" href="/">Home</a>
-                        <a id="about" className="menu-item" href="/about">About</a>
-                        <a id="contact" className="menu-item" href="/contact">Contact</a>
-                        <div className="secondary">
-                            <a className="menu-item secondary-item" href="https://www.linkedin.com/in/idocal/" target="_blank" rel="noopener noreferrer">LiknedIn</a>
-                            <a className="menu-item secondary-item" href="https://github.com/idocal" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        </div>
-                    </Menu>
+                    <Menu />
                 </FlexView>
             </FlexView>
 

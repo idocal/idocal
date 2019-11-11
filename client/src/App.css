@@ -60,12 +60,10 @@ button:hover, button:focus, button:active{
 .logo-bar {
     position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
-    height: 100px;
     z-index: 9;
-    padding: 0 30px;
     background: none;
+    left: 15px;
+    top: 32px;
 }
 
 .logo-bar img {
@@ -83,106 +81,12 @@ button:hover, button:focus, button:active{
     transition: all 1s;
 }
 
-.logo-bar.dark .bm-burger-bars {
+.logo-bar.dark #burger-button .burger-bar {
     background: #000;
 }
 
-    /* Position and sizing of burger button */
-.bm-burger-button {
-    position: fixed;
-    width: 36px;
-    height: 22px;
-    right: 30px;
-    top: 36px;
-}
-
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-    background: #fff;
-}
-
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-    background: #8FF6FF;
-    opacity: 1 !important;
-    transition: all 1s;
-}
-
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-    height: 20px !important;
-    width: 20px !important;
-    top: 20px !important;
-    right: 20px !important;
-}
-
-/*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-*/
-.bm-menu-wrap {
-    position: fixed;
-    height: 100%;
-    top: 0;
-}
-
-/* General sidebar styles */
-.bm-menu {
-    background: #fff;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-    color: #000;
-}
-
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-    fill: #373a47;
-}
-
-/* Wrapper for item list */
-.bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
-}
-
-/* Individual item */
-.bm-item {
-    display: inline-block;
-}
-
-/* Styling of overlay */
-.bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
-    top: 0;
-    left: 0;
-}
-
-.bm-menu nav a {
-    color: #000;
-    text-decoration: none;
-    height: 50px;
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.bm-menu nav a:hover {
-    color: #F522D5;
-}
-
-.secondary {
-    margin-top: 40px;
-}
-
-.menu-item.secondary-item {
-    color: #868686;
-    font-weight: 500;
-    font-size: 20px;
-    height: 30px;
-    display: block;
-}
-
 @media only screen and (min-width: 580px) {
-    .bm-menu-wrap {
-        width: 30% !important;
+    .logo-bar {
+        left: 30px;
     }
 }
