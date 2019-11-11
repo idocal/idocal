@@ -20,7 +20,7 @@ export default class Homepage extends Component {
                               vAlignContent="center"
                               width="100%"
                     >
-                        <video loop autoPlay data-keepplaying muted>
+                        <video loop autoPlay data-keepplaying muted playsInline>
                             <source src={Video} type='video/mp4' />
                         </video>
                         <div className="header-slogan">
