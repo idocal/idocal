@@ -19,7 +19,7 @@ export default class Menu extends Component {
     render() {
         return (
             <div className="navigation">
-                <div id="menu-overlay" />
+                <div id="menu-overlay" onClick={this.toggleMenu} />
                 <div id="burger-button" onClick={this.toggleMenu}>
                     <div className="burger-bar" />
                     <div className="burger-bar" />
