@@ -67,7 +67,7 @@ export default class Contact extends Component {
 
     render() {
         const form =
-            <FlexView column className="form" vAlignContent="center" hAlignContent="center">
+            <FlexView column className="form content" vAlignContent="center" hAlignContent="center">
                 <FlexView className="text" column hAlignContent="center">
                     <h1>Mail me anything!</h1>
                     <p>I promise to read your message as soon as I can.</p>
@@ -122,11 +122,9 @@ export default class Contact extends Component {
 
         return (
             <FlexView grow column className="contact" width="100%">
-                <FullPage>
-                    <FlexView className="section" width="100%" column>
-                        { !this.state.sent ? form : sent }
-                    </FlexView>
-                </FullPage>
+                <FlexView className="section" width="100%" column>
+                    { !this.state.sent ? form : sent }
+                </FlexView>
             </FlexView>
         )
     }

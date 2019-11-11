@@ -1,5 +1,6 @@
 .about .section {
     flex-flow: column wrap !important;
+    height: 100%;
 }
 
 .about .half {
@@ -11,11 +12,15 @@
     background-image: url('../images/profile.jpg');
     background-size: cover;
     background-position: center;
+    display: none;
 }
 
 .about .text {
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     min-width: 100% !important;
+    min-height: 100% !important;
+    justify-content: center;
     line-height: 30px;
     text-align: center;
 }
@@ -44,7 +49,7 @@
 @media only screen and (min-width: 580px) {
 
     .about .section{
-        flex-flow: row-reverse wrap !important;
+        flex-flow: row wrap !important;
     }
 
     .about .half {
@@ -53,7 +58,8 @@
     }
 
     .about .text {
-        padding: 0 40px;
+        padding-left: 40px;
+        padding-right: 40px;
         text-align: left;
     }
 }

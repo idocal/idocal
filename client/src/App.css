@@ -85,6 +85,10 @@ button:hover, button:focus, button:active{
     background: #000;
 }
 
+.content {
+    padding-top: 100px;
+}
+
 @media only screen and (min-width: 580px) {
     .logo-bar {
         left: 30px;
