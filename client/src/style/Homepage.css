@@ -14,16 +14,15 @@
     height: 100%;
 }
 
-.banner h1 {
+.banner h1, .banner h2 {
     color: #fff;
     font-size: 64px;
     text-align: center;
+    padding: 0 10px;
 }
 
 .banner h2 {
-    color: #fff;
     font-size: 24px;
-    text-align: center;
 }
 
 .banner video {
@@ -53,15 +52,13 @@
 }
 
 @media only screen and (min-width: 580px) {
-    .banner h1 {
+    .banner h1, .banner h2 {
         color: #fff;
         font-size: 100px;
         text-align: center;
     }
 
     .banner h2 {
-        color: #fff;
         font-size: 48px;
-        text-align: center;
     }
 }
