@@ -14,6 +14,10 @@
     transition: transform .4s ease;
 }
 
+.logo-bar.dark #burger-button .burger-bar, .logo-bar.bright #burger-button .burger-bar {
+    transition: transform .4s ease;
+}
+
 #burger-button.open .burger-bar {
     background: #000;
 }

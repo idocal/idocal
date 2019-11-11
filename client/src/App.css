@@ -98,12 +98,12 @@ button:hover, button:focus, button:active{
 
 .logo-bar.bright #burger-button .burger-bar {
     background: #fff;
-    transition: all 1s ease;
+    transition: oapcity 1s ease;
 }
 
 .logo-bar.dark #burger-button .burger-bar {
     background: #000;
-    transition: all 1s ease;
+    transition: opacity 1s ease;
 }
 
 .content {
