@@ -45,9 +45,20 @@ export const projects = {
         'color': 'purple',
         'sections': [
             {
-                'title': 'Feelboard everywhere',
-                'text': 'text about feelboard'
-            }
+                'title': 'A sensible board',
+                'text': 'Feelboard reshapes the way informative boards interact with the public sphere. It detects what kind of crowd observes the board and automatically transforms its content accordingly.'
+            },
+            {
+                'title': 'One platform, many use cases',
+                'text': 'The sensible board can be demonstrated in many forms. It can be used as an accessibility tool for the elder population, it can be attached to a security camera for age-based detection hazards or to adjust to a gender-specific content.'
+            },
+            {
+                'title': 'How it works',
+                'text': 'Our algorithm was trained in a supervised learning fashion based on more than 500k faces from IMDB and Wikipedia. It uses a Multi-task Convolutional Neural Network architecture to classify simultaneously both age and gender. Feelboard can operate on any device with a camera and CPU.'
+            },
+            {
+                'title': 'Algorithmic flow'
+            },
         ]
     },
     'bonariv': {

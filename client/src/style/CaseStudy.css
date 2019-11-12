@@ -3,12 +3,20 @@
     background-position: center center;
 }
 
-.case-study.meezei .header {
+.case-study.meezi .header {
     background-image: url('../images/meezi-header.jpg');
 }
 
 .case-study.rosette .header {
     background-image: url('../images/rosette-header.png');
+}
+
+.case-study.feelboard .header {
+    background-image: url('../images/feelboard-header.png');
+}
+
+.case-study.bonariv .header {
+    background-image: url('../images/bonariv-header.jpg');
 }
 
 .case-study .header .headline {
@@ -119,9 +127,9 @@ ROSETTE
     background-position: top center;
 }
 
-.rosette-section-2 .case-image img {
-    width: 350px;
-    height: auto;
+.case-section .case-image.half img {
+    height: 100%;
+    width: auto;
     margin-top: 100px;
 }
 
@@ -155,6 +163,55 @@ ROSETTE
     font-size: 14px;
 }
 
+/********
+FEELBOARD
+ *******/
+
+.feelboard-section-1, .feelboard-section-2 {
+    background-color: #f6f6f6;
+}
+
+.feelboard .info {
+    padding-top: 30px;
+}
+
+.feelboard .info p, .feelboard .info p {
+    font-size: 14px;
+}
+
+.feelboard-section-3, .feelboard-section-4 {
+    background-color: #150729;
+    color: #fff;
+}
+
+.feelboard-section-3 .info p, .feelboard-section-4 .info p {
+    color: #fff;
+}
+
+.feelboard .info .boxes {
+    text-align: center;
+}
+
+.feelboard .info .boxes .box {
+    width: 240px;
+    height: 32px;
+    border: 1px solid #8ce5fc;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 5px;
+    font-size: 14px;
+    padding-top: 6px;
+}
+
+.feelboard .info .boxes .arrow {
+    width: 32px;
+    height: 18px;
+    background-image : url("../images/feelboard-arrow@2x.png");
+    margin: 5px auto 0 auto;
+    background-size: cover;
+}
+
 @media only screen and (min-width: 760px) {
     .case-study .live button {
         font-size: 60px;
@@ -172,18 +229,23 @@ ROSETTE
         flex-flow: row-reverse nowrap !important;
     }
 
+    .case-section .case-image.half img {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
     .case-study .case-section h2 {
         font-size: 32px;
         text-align: left;
     }
 
+    /********
+    ROSETTE
+     *******/
+
     .rosette-section-1 .info p {
         text-align: center;
-    }
-
-    .rosette-section-2 .case-image img {
-        width: 100%;
-        height: auto;
     }
 
     .case-study .case-section .info.half, .case-study .case-section .case-image.half, .case-study .case-section .info.half.stretch {
@@ -208,5 +270,38 @@ ROSETTE
 
     .case-section.rosette-section-4 .info p {
         font-size: 20px;
+    }
+
+    /********
+    FEELBOARD
+     *******/
+
+    .feelboard .info p, .feelboard .info p {
+        font-size: 20px;
+    }
+
+    .feelboard-section-4 .case-image.half img {
+        height: 100%;
+        width: auto;
+    }
+
+    .feelboard .info .boxes .box {
+        width: 380px;
+        height: 64px;
+        border: 1px solid #8ce5fc;
+        text-align: center;
+        color: #fff;
+        font-weight: 300;
+        margin-top: 20px;
+        font-size: 24px;
+        padding-top: 15px;
+    }
+
+    .feelboard .info .boxes .arrow {
+        width: 32px;
+        height: 18px;
+        background-image : url("../images/feelboard-arrow@2x.png");
+        margin: 20px auto 0 auto;
+        background-size: cover;
     }
 }
