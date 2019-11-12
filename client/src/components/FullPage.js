@@ -26,14 +26,15 @@ const onLeave = (origin, destination, direction) => {
     }
 };
 
-export default ({ props, children }) => (
+export default ({ children, onInit }) => (
     <ReactFullpage
         scrollingSpeed = {scrollingSpeed}
         dragAndMove={true}
         fadingEffect={true}
         licenseKey={'0410E3D2-5EAB4F1A-BA2F2B25-070147F7'}
         onLeave={onLeave}
-        render={(state, fullpageApi) => {
+        render={({state, fullpageApi}) => {
+            onInit && onInit(fullpageApi);
             return (
                 <ReactFullpage.Wrapper>
                     {children}

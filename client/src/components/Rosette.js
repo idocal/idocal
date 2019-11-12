@@ -52,14 +52,13 @@ function Rosette(props) {
     const section4 =
         <FlexView column className="case-section rosette-section-4" width="100%" height="100%">
 
-            <FlexView column className="info center content">
+            <FlexView column className="info center content" style={{ height: 'unset' }}>
                 <h2>{project.sections[3].title}</h2>
                 <p className="center">{project.sections[3].text}</p>
             </FlexView>
 
-            <FlexView grow className="bg-wrapper">
-                <div className="background" />
-            </FlexView>
+            <FlexView className="background" style={{flex: 1}} />
+
 
         </FlexView>;
 

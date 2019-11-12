@@ -5,8 +5,19 @@ import Project from "./Project";
 import FullPage from './FullPage';
 import Video from '../images/header_1024.mp4';
 import { projects } from "../config";
+import preLoading from "../preLoading";
 
 export default class Homepage extends Component {
+    // constructor() {
+    //     super();
+    //     this.state = {
+    //         loading: true,
+    //     }
+    //     preLoading().then(() => {
+    //         this.setState({ loading: false });
+    //     })
+    // }
+
     componentDidMount() {
         this.props.changeLogoMode('bright');
     }
@@ -14,7 +25,7 @@ export default class Homepage extends Component {
     render() {
         return (
             <FlexView grow column className="homepage" width="100%">
-                <FullPage>
+                <FullPage onInit={this.props.onFullPageInit}>
                     <FlexView column className="banner section"
                               hAlignContent="center"
                               vAlignContent="center"
