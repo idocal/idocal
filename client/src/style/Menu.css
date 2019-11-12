@@ -18,6 +18,10 @@
     transition: transform .4s ease;
 }
 
+.logo-bar.bright #burger-button.open .burger-bar {
+    background: #000;
+}
+
 #burger-button.open .burger-bar {
     background: #000;
 }
