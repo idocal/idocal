@@ -7,11 +7,13 @@ import FullPage from "./FullPage";
 import Rosette from "./Rosette";
 import Feelboard from "./Feelboard";
 import Storyline from "./Storyline";
+import BoNariv from "./BoNariv";
 
 const projectsMap = {
     'rosette': <Rosette />,
     'feelboard': <Feelboard />,
-    'storyline': <Storyline />
+    'storyline': <Storyline />,
+    'bonariv': <BoNariv />
 };
 
 export default class CaseStudy extends Component {

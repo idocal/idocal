@@ -230,6 +230,26 @@ STORYLINE
     background-position: center center;
 }
 
+/********
+BONARIV
+ *******/
+
+.case-study .case-section.bonariv-section-1 .case-image {
+    display: none !important;
+}
+
+.bonariv-section-1 .info.half {
+    height: 100%;
+}
+
+.case-study .case-section.bonariv-section-5 {
+    align-items: center;
+}
+
+.case-study .case-section.bonariv-section-5 .info {
+    width: 100%;
+}
+
 @media only screen and (min-width: 760px) {
     .case-study .live button {
         font-size: 60px;
@@ -337,5 +357,17 @@ STORYLINE
 
     .case-study .case-section .info.half {
         padding-right: 40px;
+    }
+
+    /********
+    BONARIV
+     *******/
+
+    .case-study .case-section.bonariv-section-1 .case-image {
+        display: flex !important;
+    }
+
+    .bonariv-section-2 .info.content, .bonariv-section-3 .info.content, .bonariv-section-4 .info.content {
+        padding-top: unset;
     }
 }
