@@ -19,6 +19,14 @@
     background-image: url('../images/bonariv-header.jpg');
 }
 
+.case-study.storyline .header {
+    background-image: url('../images/storyline-header.png');
+}
+
+.case-study.motionsense .header {
+    background-image: url('../images/motionsense-header.jpg');
+}
+
 .case-study .header .headline {
     padding: 20px;
     width: 100%;
@@ -212,6 +220,16 @@ FEELBOARD
     background-size: cover;
 }
 
+/********
+STORYLINE
+ *******/
+
+.case-section.storyline-section-1 .case-image {
+    background-image: url('../images/storyline-section-1.png');
+    background-size: cover;
+    background-position: center center;
+}
+
 @media only screen and (min-width: 760px) {
     .case-study .live button {
         font-size: 60px;
@@ -303,5 +321,21 @@ FEELBOARD
         background-image : url("../images/feelboard-arrow@2x.png");
         margin: 20px auto 0 auto;
         background-size: cover;
+    }
+
+    /********
+    STORYLINE
+     *******/
+
+    .case-study .case-section.half.case-section.storyline-section-1 {
+        flex-flow: row nowrap !important;
+    }
+
+    .storyline-section-2 .info.content, .storyline-section-3 .info.content {
+        padding-top: unset;
+    }
+
+    .case-study .case-section .info.half {
+        padding-right: 40px;
     }
 }

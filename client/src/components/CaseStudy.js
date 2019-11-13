@@ -6,10 +6,12 @@ import Project from "./Project";
 import FullPage from "./FullPage";
 import Rosette from "./Rosette";
 import Feelboard from "./Feelboard";
+import Storyline from "./Storyline";
 
 const projectsMap = {
     'rosette': <Rosette />,
     'feelboard': <Feelboard />,
+    'storyline': <Storyline />
 };
 
 export default class CaseStudy extends Component {

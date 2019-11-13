@@ -82,8 +82,16 @@ export const projects = {
         'color': 'royalblue',
         'sections': [
             {
-                'title': 'Storyline.ai',
-                'text': 'text about storyline'
+                'title': 'Embrace state-of-the-art language generation',
+                'text': 'We should not be afraid of the progression of AI. While language generation can be misused to create fake news, it is capable to proactively enrich the interaction between humans and machines.'
+            },
+            {
+                'title': 'Compose a beautiful story with AI',
+                'text': 'With Storyline.ai, you can collaborate with the computer. Start by typing anything that comes to mind and watch the computer instantly complete your thoughts. '
+            },
+            {
+                'title': 'Computers are artists too',
+                'text': 'The project emphasizes the potential of state-of-the-art technology to enrich the artistic world. AI can be the artist’s best friend, suggesting out of the box ideas that can never be imagined by a human.'
             }
         ]
     },
