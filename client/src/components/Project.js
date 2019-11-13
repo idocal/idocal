@@ -15,14 +15,13 @@ class Project extends Component {
     }
 
     render() {
-        let backgroundImage = 'url(\'/img/rosette-header.jpg\')';
         return (
             <FlexView column
-                      className={ "project " + this.props.color }
+                      className={ "project " + this.props.alias }
                       onClick={this.onClick}
                       vAlignContent="center"
                       hAlignContent="center">
-                <div className="thumb" style={{backgroundImage: backgroundImage}} />
+                <div className="thumb" />
                 <h3>{this.props.name}</h3>
                 <h4>{this.props.tags}</h4>
             </FlexView>
