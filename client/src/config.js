@@ -31,7 +31,15 @@ export const projects = {
         'sections': [
             {
                 'title': 'Meeting up made easy',
-                'text': 'With Meezi you meet up with friends'
+                'text': 'Meezi is the best solution for social scheduling. Quickly meet up with your friends within just 3 steps: Who, When and Where.'
+            },
+            {
+                'title': 'No more waiting in the dark',
+                'text': 'Watch your friends arrive prior to the meeting live on a map. With Meezi, you spend less time coordinating and more time enjoying with your loved ones.'
+            },
+            {
+                'title': 'Discover cool events nearby',
+                'text': 'Meezi events can be set to public mode, which allows strangers to join. Whether you are missing a player on your Friday soccer or would like to announce your house party to the neighbors - just expose your Meezi event.'
             }
         ]
     },

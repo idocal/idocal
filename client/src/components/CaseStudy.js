@@ -8,12 +8,14 @@ import Rosette from "./Rosette";
 import Feelboard from "./Feelboard";
 import Storyline from "./Storyline";
 import BoNariv from "./BoNariv";
+import Meezi from "./Meezi";
 
 const projectsMap = {
     'rosette': <Rosette />,
     'feelboard': <Feelboard />,
     'storyline': <Storyline />,
-    'bonariv': <BoNariv />
+    'bonariv': <BoNariv />,
+    'meezi': <Meezi />
 };
 
 export default class CaseStudy extends Component {

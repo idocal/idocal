@@ -59,7 +59,6 @@ function Feelboard(props) {
             </FlexView>
 
             <FlexView column className="info half">
-                <h2>{project.sections[3].title}</h2>
                 <div className="boxes">
                     <div className="box">Record video</div>
                     <div className="arrow" />
