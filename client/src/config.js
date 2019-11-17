@@ -118,11 +118,19 @@ export const projects = {
         'name': "MotionSense",
         'tags': ["Machine Learning", "Signal Analysis"],
         'roles': ["Research", "Algorithm Design", "Data Mining"],
-        'url': 'https://github.com/idocal/workshop',
+        'url': 'https://github.com/idocal/motionsense',
         'sections': [
             {
-                'title': 'MotionSense',
-                'text': 'text about motionsense'
+                'title': 'Predict body activities using phone signals',
+                'text': 'The MotionSense research project performs data understanding based on raw mobile phone sensors. Our inputs are 3D attitude, gravity, acceleration and rotation time-series vectors. The goal is to find a correlation between those to a body activity.'
+            },
+            {
+                'title': 'Beyond a lab-only research',
+                'text': 'Since any smartphone today is capable of generating sensor data points, the potential data coverage here is limitless. We demonstrate here how anyone can easily add supervised data to the system and improve the model’s accuracy.'
+            },
+            {
+                'title': 'The power of applicative predictions',
+                'text': 'Sometimes numbers do lie. We may work hard on improving standard evaluation metrics over static data. However, in the real world data is often a living substance, and results will not reflect the model’s actual performance. We suggest here a live prediction system which statistically smoothes static predictions and boosts performance.'
             }
         ]
     }

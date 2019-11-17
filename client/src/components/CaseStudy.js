@@ -9,13 +9,15 @@ import Feelboard from "./Feelboard";
 import Storyline from "./Storyline";
 import BoNariv from "./BoNariv";
 import Meezi from "./Meezi";
+import MotionSense from "./MotionSense";
 
 const projectsMap = {
     'rosette': <Rosette />,
     'feelboard': <Feelboard />,
     'storyline': <Storyline />,
     'bonariv': <BoNariv />,
-    'meezi': <Meezi />
+    'meezi': <Meezi />,
+    'motionsense': <MotionSense />
 };
 
 export default class CaseStudy extends Component {

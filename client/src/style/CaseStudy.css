@@ -294,6 +294,22 @@ MEEZI
     text-align: center;
 }
 
+/********
+MOTIONSENSE
+ *******/
+
+.motionsense-section-2 {
+    background-image: url('../images/motionsense-section-2.png');
+    background-size: cover;
+    background-position: right center;
+    color: #fff;
+}
+
+.case-study .case-section.motionsense-section-2 .info p {
+    color: #fff;
+    font-weight: 500;
+}
+
 @media only screen and (min-width: 760px) {
     .case-study .live button {
         font-size: 60px;
@@ -427,6 +443,14 @@ MEEZI
     .case-section.meezi-section-2 .case-image.half img {
         width: 80%;
         height: auto;
+    }
+
+    /********
+    MOTIONSENSE
+     *******/
+
+    .case-study .motionsense .case-section.half {
+        flex-flow: row nowrap !important;
     }
 
 }
