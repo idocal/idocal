@@ -63,9 +63,9 @@ function BoNariv(props) {
         </FlexView>;
 
     const section5 =
-        <FlexView column className="case-section half bonariv-section-5" width="100%" height="100%" vAlignContent="center">
+        <FlexView column className="case-section half bonariv-section-5" width="100%" height="100%">
 
-            <FlexView column className="info content">
+            <FlexView column className="info half content">
                 <h2>{project.sections[4].title}</h2>
                 <p>{project.sections[4].text}</p>
             </FlexView>

@@ -250,6 +250,14 @@ BONARIV
     width: 100%;
 }
 
+.case-study .case-section.bonariv-section-5 .info {
+    height: 100%;
+}
+
+.bonariv-section-5 {
+    justify-content: flex-end;
+}
+
 /********
 MEEZI
  *******/
