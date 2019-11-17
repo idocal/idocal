@@ -4,7 +4,6 @@ import ReactFullpage from "@fullpage/react-fullpage";
 const scrollingSpeed = 1000;
 
 const changeLogoMode = mode => {
-    console.log('changing logo mode to: ', mode);
     if (document.getElementById('logo-bar')) {
         if (mode === 'dark') {
             document.getElementById('logo-bar').classList.remove("bright");

@@ -26,29 +26,43 @@ export default class CaseStudy extends Component {
         name: null,
         roles: [],
         sections: [],
-        url: '/'
+        url: '/',
+        nextProjects: []
     };
+
+    getNextProjects(project) {
+        let projectList = Object.keys(projects);
+        let projectIndex = projectList.findIndex(e => {return e === project});
+        let nextProjectsIndex = [(projectIndex + 1) % projectList.length, (projectIndex + 2) % projectList.length];
+        return [ projectList[nextProjectsIndex[0]], projectList[nextProjectsIndex[1]] ]
+    }
 
     async componentDidMount() {
         let project = this.props.match.params['project'];
+        let nextProjects = this.getNextProjects(project);
+
         await this.setState({
             project,
             name: projects[project].name,
             roles: projects[project].roles.join(", "),
             sections: projects[project].sections,
-            url: projects[project].url
+            url: projects[project].url,
+            nextProjects
         });
     }
 
     async componentDidUpdate(prevProps, prevState, snapshot) {
         if (prevProps.match.params !== this.props.match.params) {
             let project = this.props.match.params['project'];
+            let nextProjects = this.getNextProjects(project);
+
             await this.setState({
                 project,
                 name: projects[project].name,
                 roles: projects[project].roles.join(", "),
                 sections: projects[project].sections,
-                url: projects[project].url
+                url: projects[project].url,
+                nextProjects
             });
         }
     }
@@ -77,21 +91,17 @@ export default class CaseStudy extends Component {
                     </FlexView>
 
                     <FlexView className="projects section logomode-bright" width="100%">
-                        <FlexView className="row half">
-                            <Project name={projects['rosette'].name}
-                                     tags={projects['rosette'].tags.join(", ")}
-                                     color={projects['rosette'].color}
-                                     alias='rosette' />
-                        </FlexView>
 
-                        <FlexView className="row half">
-                            <Project name={projects['meezi'].name}
-                                     tags={projects['meezi'].tags.join(", ")}
-                                     color={projects['meezi'].color}
-                                     alias='meezi' />
-                        </FlexView>
+                        {
+                            this.state.nextProjects.map( (project, i) => (
+                                <Project key={i} name={projects[project].name}
+                                         tags={projects[project].tags.join(", ")}
+                                         color={projects[project].color}
+                                         alias={project} />
+                            ))
+                        }
+
                     </FlexView>
-
 
                 </FullPage>
             </FlexView>
