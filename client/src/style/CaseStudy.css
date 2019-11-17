@@ -423,6 +423,10 @@ MOTIONSENSE
         padding-top: unset;
     }
 
+    .case-section.storyline-section-2 .case-image.half img {
+        width: 80%;
+    }
+
     .case-study .case-section .info.half {
         padding-right: 40px;
     }
