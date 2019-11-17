@@ -55,7 +55,7 @@ export const projects = {
             },
             {
                 'title': 'One platform, many use cases',
-                'text': 'The sensible board can be demonstrated in many forms. It can be used as an accessibility tool for the elder population, it can be attached to a security camera for age-based detection hazards or to adjust to a gender-specific content.'
+                'text': 'The sensible board can be widely adapted. It can be used as an accessibility tool for the elderly, it can be attached to a security camera for age-based detection hazards or to adjust to a gender-specific content.'
             },
             {
                 'title': 'How it works',
