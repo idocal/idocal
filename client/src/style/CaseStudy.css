@@ -1,3 +1,47 @@
+.case-study .case-section {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+.case-study .case-section div:first-child {
+    margin-top: 80px;
+}
+
+.case-study .case-section .case-image {
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.case-study .case-section .info {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0 15px;
+}
+
+.case-study .case-section .case-image img {
+    height: 90%;
+    width: auto;
+}
+
+
+.grow {
+    flex-grow: 1;
+}
+
+.case-study .case-section .info.text-shrink p {
+    font-size: 14px;
+}
+
 .case-study .header {
     background-size: cover;
     background-position: center center;
@@ -66,21 +110,6 @@
     transition: all .2s;
 }
 
-.case-study .case-section .case-image {
-    width: 100%;
-    height: 50%;
-    min-width: 100% !important;
-    min-height: 50% !important;
-}
-
-.case-study .case-section .info {
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-content: center;
-    height: 50%;
-    width: 100%;
-}
-
 .case-study .case-section h2 {
     font-size: 24px;
     text-align: center;
@@ -91,7 +120,7 @@
     color: #636363;
     line-height: 26px;
     text-align: center;
-    max-width: 800px;
+    max-width: 650px;
 }
 
 .case-study .case-section p.center{
@@ -99,10 +128,6 @@
 }
 
 .case-study .case-section .info {
-    align-items: center;
-}
-
-.case-study .case-section .info.center {
     align-items: center;
 }
 
@@ -119,8 +144,12 @@
 .case-study .case-section .info.half.stretch {
     width: 100%;
     height: 100%;
-    min-width: 100% !important;
-    min-height: 100% !important;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.case-study .case-section .background {
+    background-size: cover;
 }
 
 /********
@@ -130,8 +159,6 @@ ROSETTE
 .rosette-section-1 .background {
     background-image: url('../images/rosette-section-1.jpg');
     width: 100%;
-    height: 75%;
-    background-size: cover;
     background-position: top center;
 }
 
@@ -155,61 +182,42 @@ ROSETTE
 
 .rosette-section-4 .background {
     background-image: url('../images/rosette-section-4.png');
-    width: 100%;
-    height: 100%;
-    background-size: cover;
     background-position: top center;
-}
-
-.case-section.rosette-section-4 .info {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 30px;
-}
-
-.case-section.rosette-section-4 .info p {
-    font-size: 14px;
 }
 
 /********
 FEELBOARD
  *******/
 
-.feelboard-section-1, .feelboard-section-2 {
+.feelboard-section-1, .feelboard-section-2, .feelboard-section-4 {
     background-color: #f6f6f6;
 }
 
-.feelboard .info {
-    padding-top: 30px;
-}
-
-.feelboard .info p, .feelboard .info p {
-    font-size: 14px;
-}
-
-.feelboard-section-3, .feelboard-section-4 {
+.feelboard-section-3 {
     background-color: #150729;
     color: #fff;
 }
 
-.feelboard-section-3 .info p, .feelboard-section-4 .info p {
+.feelboard-section-3 .info p {
     color: #fff;
 }
 
 .feelboard .info .boxes {
     text-align: center;
+    padding: 10px 0 30px 0;
 }
 
 .feelboard .info .boxes .box {
     width: 240px;
     height: 32px;
-    border: 1px solid #8ce5fc;
     text-align: center;
-    color: #fff;
     font-weight: 300;
     margin-top: 5px;
     font-size: 14px;
     padding-top: 6px;
+    color: #080858;
+    box-shadow: 4px 4px 30px 0 rgba(0, 0, 0, 0.06);
+    background-color: #ffffff;
 }
 
 .feelboard .info .boxes .arrow {
@@ -218,6 +226,13 @@ FEELBOARD
     background-image : url("../images/feelboard-arrow@2x.png");
     margin: 8px auto;
     background-size: cover;
+}
+
+.case-study .case-section.feelboard-section-4 .background {
+    background-image: url("../images/feelboard-section-4.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /********
@@ -235,19 +250,7 @@ BONARIV
  *******/
 
 .case-study .case-section.bonariv-section-1 .case-image {
-    display: none !important;
-}
-
-.bonariv-section-1 .info.half {
-    height: 100%;
-}
-
-.case-study .case-section.bonariv-section-5 {
-    align-items: center;
-}
-
-.case-study .case-section.bonariv-section-5 .info {
-    width: 100%;
+    display: none;
 }
 
 .case-study .case-section.bonariv-section-5 .info {
@@ -323,6 +326,38 @@ MOTIONSENSE
         font-size: 60px;
     }
 
+    .case-study .case-section {
+        flex-flow: row-reverse;
+    }
+
+    .case-study .case-section.reverse {
+        flex-flow: row;
+    }
+
+    .case-study .case-section.column {
+        flex-flow: column;
+    }
+
+    .case-study .case-section.half .case-image {
+        width: 50%;
+        height: 100%;
+    }
+
+    .case-study .case-section.half .case-image img {
+        width: 90%;
+        height: auto;
+    }
+
+    .case-study .case-section div:first-child {
+        margin-top: unset;
+    }
+
+    .case-study .case-section.half .info {
+        align-items: flex-start;
+        padding: 0 20px 0 50px;
+        width: 50%;
+    }
+
     .case-study .case-section p {
         text-align: left;
     }
@@ -331,14 +366,16 @@ MOTIONSENSE
         align-items: flex-start;
     }
 
-    .case-study .case-section.half {
-        flex-flow: row-reverse nowrap !important;
+    .case-study .case-section .info.margin-top {
+        margin-top: 80px;
     }
 
-    .case-section .case-image.half img {
-        width: 100%;
-        height: auto;
-        margin-top: 0;
+    .case-study .case-section .info.text-shrink p {
+        font-size: 20px;
+    }
+
+    .case-study .case-section .info.text-center {
+        align-items: center;
     }
 
     .case-study .case-section h2 {
@@ -346,58 +383,26 @@ MOTIONSENSE
         text-align: left;
     }
 
-    /********
-    ROSETTE
-     *******/
-
-    .rosette-section-1 .info p {
-        text-align: center;
-    }
-
-    .case-study .case-section .info.half, .case-study .case-section .case-image.half, .case-study .case-section .info.half.stretch {
-        width: 50%;
-        height: 100%;
-        min-width: 50% !important;
-        min-height: 100% !important;
-    }
-
     .case-study .case-section .case-video, .case-study .case-section .case-video video {
         display: block;
-    }
-
-    .case-study .case-section .info.half {
-        padding-left: 60px;
-        padding-right: 20px;
-    }
-
-    .case-study .case-section .info.half p {
-        max-width: 600px;
-    }
-
-    .case-section.rosette-section-4 .info p {
-        font-size: 20px;
     }
 
     /********
     FEELBOARD
      *******/
 
-    .feelboard .info p, .feelboard .info p {
-        font-size: 20px;
-    }
-
     .feelboard-section-4 .case-image.half img {
         height: 100%;
         width: auto;
     }
 
+    .feelboard .info .boxes {
+        padding: 0 50px 0 0;
+    }
+
     .feelboard .info .boxes .box {
-        width: 380px;
+        width: 370px;
         height: 64px;
-        border: 1px solid #8ce5fc;
-        text-align: center;
-        color: #fff;
-        font-weight: 300;
         margin-top: 20px;
         font-size: 24px;
         padding-top: 15px;
@@ -415,20 +420,8 @@ MOTIONSENSE
     STORYLINE
      *******/
 
-    .case-study .case-section.half.case-section.storyline-section-1 {
-        flex-flow: row nowrap !important;
-    }
-
-    .storyline-section-2 .info.content, .storyline-section-3 .info.content {
-        padding-top: unset;
-    }
-
     .case-section.storyline-section-2 .case-image.half img {
         width: 80%;
-    }
-
-    .case-study .case-section .info.half {
-        padding-right: 40px;
     }
 
     /********

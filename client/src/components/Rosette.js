@@ -8,59 +8,59 @@ const project = projects['rosette'];
 
 function Rosette(props) {
     const section1 =
-        <FlexView column className="case-section rosette-section-1 logomode-dark content" width="100%" height="100%">
+        <div className="case-section rosette-section-1 column">
 
-            <FlexView column className="info center">
+            <div className="info grow center text-center">
                 <h2>{project.sections[0].title}</h2>
                 <p className="center">{project.sections[0].text}</p>
-            </FlexView>
+            </div>
 
-            <div className="background" />
+            <div className="background" style={{height: "50%"}} />
 
-        </FlexView>;
+        </div>;
 
     const section2 =
-        <FlexView column className="case-section half rosette-section-2" width="100%" height="100%">
+        <div className="case-section rosette-section-2 half">
 
-            <FlexView className="case-image half" hAlignContent="center" vAlignContent="center">
+            <div className="case-image center">
                 <img src={ ImgSection2 } alt="Rosette NLP Analyzer" />
-            </FlexView>
+            </div>
 
-            <FlexView column className="info half">
+            <div className="info grow center">
                 <h2>{project.sections[1].title}</h2>
                 <p>{project.sections[1].text}</p>
-            </FlexView>
+            </div>
 
-        </FlexView>;
+        </div>;
 
     const section3 =
-        <FlexView column className="case-section half rosette-section-3" width="100%" height="100%">
+        <div className="case-section half rosette-section-3">
 
-            <FlexView className="case-video half" hAlignContent="center" vAlignContent="center">
+            <div className="case-video half center">
                 <video autoPlay={true} muted loop className="video" data-keepplaying playsInline>
                     <source src={VidSection3} type="video/mp4"/>
                 </video>
-            </FlexView>
+            </div>
 
-            <FlexView column className="info half stretch content">
+            <div className="info grow center">
                 <h2>{project.sections[2].title}</h2>
                 <p>{project.sections[2].text}</p>
-            </FlexView>
+            </div>
 
-        </FlexView>;
+        </div>;
 
     const section4 =
-        <FlexView column className="case-section rosette-section-4" width="100%" height="100%">
+        <div className="case-section rosette-section-4 column">
 
-            <FlexView column className="info center content" style={{ height: 'unset' }}>
+            <div column className="info grow center text-center text-shrink margin-top" style={{paddingBottom: "40px"}}>
                 <h2>{project.sections[3].title}</h2>
                 <p className="center">{project.sections[3].text}</p>
-            </FlexView>
+            </div>
 
-            <FlexView className="background" style={{flex: 1}} />
+            <div className="background" style={{height: "50%"}} />
 
 
-        </FlexView>;
+        </div>;
 
 
     const sections = [

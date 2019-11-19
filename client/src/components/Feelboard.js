@@ -10,56 +10,52 @@ const project = projects['feelboard'];
 
 function Feelboard(props) {
     const section1 =
-        <FlexView column className="case-section half feelboard-section-1" width="100%" height="100%">
+        <div className="case-section half feelboard-section-1">
 
-            <FlexView className="case-image half" hAlignContent="center" vAlignContent="center">
-                <img src={ ImgSection1 } alt="A sensible board" />
-            </FlexView>
+            <div className="case-image center">
+                <img src={ ImgSection1 } alt={project.sections[0].title} />
+            </div>
 
-            <FlexView column className="info half">
+            <div className="info grow center">
                 <h2>{project.sections[0].title}</h2>
                 <p>{project.sections[0].text}</p>
-            </FlexView>
+            </div>
 
-        </FlexView>;
+        </div>;
 
     const section2 =
-        <FlexView column className="case-section half feelboard-section-2" width="100%" height="100%">
+        <div className="case-section half feelboard-section-2">
 
-            <FlexView className="case-image half" hAlignContent="center" vAlignContent="center">
-                <img src={ ImgSection2 } alt="One platform, many use cases" />
-            </FlexView>
+            <div className="case-image center">
+                <img src={ ImgSection2 } alt={project.sections[1].title} />
+            </div>
 
-            <FlexView column className="info half">
+            <div className="info grow center">
                 <h2>{project.sections[1].title}</h2>
                 <p>{project.sections[1].text}</p>
-            </FlexView>
+            </div>
 
-        </FlexView>;
+        </div>;
 
     const section3 =
-        <FlexView column className="case-section half feelboard-section-3" width="100%" height="100%">
+        <div className="case-section half feelboard-section-3">
 
-            <FlexView className="case-image half" hAlignContent="center" vAlignContent="center">
-                <img src={ ImgSection3 } alt="How it works" />
-            </FlexView>
+            <div className="case-image center">
+                <img src={ ImgSection3 } alt={project.sections[2].title} />
+            </div>
 
-            <FlexView column className="info half">
+            <div className="info grow center text-shrink">
                 <h2>{project.sections[2].title}</h2>
                 <p>{project.sections[2].text}</p>
-            </FlexView>
+            </div>
 
-        </FlexView>;
+        </div>;
 
     const section4 =
-        <FlexView column className="case-section half feelboard-section-4" width="100%" height="100%">
+        <div className="case-section half feelboard-section-4">
 
-            <FlexView className="case-image half" hAlignContent="center" vAlignContent="center">
-                <img src={ ImgSection4 } alt="How it works" />
-            </FlexView>
-
-            <FlexView column className="info half">
-                <div className="boxes">
+            <div className="info center">
+                <div className="boxes" style={{marginTop: 0}}>
                     <div className="box">Record video</div>
                     <div className="arrow" />
 
@@ -74,9 +70,11 @@ function Feelboard(props) {
 
                     <div className="box">Predict age and gender</div>
                 </div>
-            </FlexView>
+            </div>
 
-        </FlexView>;
+            <div className="background grow" />
+
+        </div>;
 
     const sections = [
         {
@@ -93,7 +91,7 @@ function Feelboard(props) {
         },
         {
             section: section4,
-            mode: 'logomode-bright',
+            mode: 'logomode-dark',
         }
     ];
 

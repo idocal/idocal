@@ -8,44 +8,44 @@ const project = projects['storyline'];
 
 function Storyline(props) {
     const section1 =
-        <FlexView column className="case-section half storyline-section-1" width="100%" height="100%">
+        <div className="case-section half storyline-section-1 reverse">
 
-            <FlexView column className="info half content">
+            <div className="info grow center">
                 <h2>{project.sections[0].title}</h2>
                 <p>{project.sections[0].text}</p>
-            </FlexView>
+            </div>
 
-            <FlexView className="case-image half" />
+            <FlexView className="case-image" />
 
-        </FlexView>;
+        </div>;
 
     const section2 =
-        <FlexView column className="case-section half storyline-section-2" width="100%" height="100%">
+        <div className="case-section half storyline-section-2">
 
-            <FlexView column className="info half content">
+            <div className="info grow center">
                 <h2>{project.sections[1].title}</h2>
                 <p>{project.sections[1].text}</p>
-            </FlexView>
+            </div>
 
-            <FlexView className="case-image half" hAlignContent="center" vAlignContent="center">
+            <div className="case-image center">
                 <img src={ImgSection2} alt={project.sections[1].title} />
-            </FlexView>
+            </div>
 
-        </FlexView>;
+        </div>;
 
     const section3 =
-        <FlexView column className="case-section half storyline-section-3" width="100%" height="100%">
+        <div className="case-section half storyline-section-3">
 
-            <FlexView className="case-image half" hAlignContent="center" vAlignContent="center">
+            <div className="case-image center">
                 <img src={ImgSection3} alt={project.sections[2].title} />
-            </FlexView>
+            </div>
 
-            <FlexView column className="info half content">
+            <div className="info grow center">
                 <h2>{project.sections[2].title}</h2>
                 <p>{project.sections[2].text}</p>
-            </FlexView>
+            </div>
 
-        </FlexView>;
+        </div>;
 
     const sections = [
         {

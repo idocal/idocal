@@ -1,6 +1,7 @@
 import React from 'react';
 import FlexView from 'react-flexview';
 import { projects } from '../config';
+import ImgSection1 from "../images/bonariv-section-1.png";
 import ImgSection2 from "../images/bonariv-section-2.png";
 import ImgSection3 from "../images/bonariv-section-3.png";
 import ImgSection4 from "../images/bonariv-section-4.png";
@@ -9,68 +10,70 @@ const project = projects['bonariv'];
 
 function BoNariv(props) {
     const section1 =
-        <FlexView column className="case-section half bonariv-section-1" width="100%" height="100%">
+        <div column className="case-section half bonariv-section-1 reverse">
 
-            <FlexView className="case-image half" />
-
-            <FlexView column className="info half content">
+            <div className="info grow center">
                 <h2>{project.sections[0].title}</h2>
                 <p>{project.sections[0].text}</p>
-            </FlexView>
+            </div>
 
-        </FlexView>;
+            <div className="case-image" style={{justifyContent: "flex-end"}} >
+                <img src={ImgSection1} alt={project.sections[0].title} />
+            </div>
+
+        </div>;
 
     const section2 =
-        <FlexView column className="case-section half bonariv-section-2" width="100%" height="100%">
+        <div className="case-section half bonariv-section-2">
 
-            <FlexView className="case-image half" hAlignContent="center" vAlignContent="center">
+            <div className="case-image center">
                 <img src={ImgSection2} alt={project.sections[1].title} />
-            </FlexView>
+            </div>
 
-            <FlexView column className="info half content">
+            <div className="info center">
                 <h2>{project.sections[1].title}</h2>
                 <p>{project.sections[1].text}</p>
-            </FlexView>
+            </div>
 
-        </FlexView>;
+        </div>;
 
     const section3 =
-        <FlexView column className="case-section half bonariv-section-3" width="100%" height="100%">
+        <div className="case-section half bonariv-section-3">
 
-            <FlexView className="case-image half" hAlignContent="center" vAlignContent="center">
+            <div className="case-image center">
                 <img src={ImgSection3} alt={project.sections[2].title} />
-            </FlexView>
+            </div>
 
-            <FlexView column className="info half content">
+            <div className="info grow center">
                 <h2>{project.sections[2].title}</h2>
                 <p>{project.sections[2].text}</p>
-            </FlexView>
+            </div>
 
-        </FlexView>;
+        </div>;
 
     const section4 =
-        <FlexView column className="case-section half bonariv-section-4" width="100%" height="100%">
+        <div className="case-section half bonariv-section-4">
 
-            <FlexView className="case-image half" hAlignContent="center" vAlignContent="center">
+            <div className="case-image center">
                 <img src={ImgSection4} alt={project.sections[3].title} />
-            </FlexView>
+            </div>
 
-            <FlexView column className="info half content">
+            <div className="info grow center">
                 <h2>{project.sections[3].title}</h2>
                 <p>{project.sections[3].text}</p>
-            </FlexView>
+            </div>
 
-        </FlexView>;
+        </div>;
 
     const section5 =
-        <FlexView column className="case-section half bonariv-section-5" width="100%" height="100%">
+        <div className="case-section half bonariv-section-5">
 
-            <FlexView column className="info half content">
+            <div className="info center">
                 <h2>{project.sections[4].title}</h2>
                 <p>{project.sections[4].text}</p>
-            </FlexView>
+            </div>
 
-        </FlexView>;
+        </div>;
 
 
 
