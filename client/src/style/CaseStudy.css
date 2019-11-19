@@ -265,17 +265,9 @@ BONARIV
 MEEZI
  *******/
 
-.case-section.meezi-section-1 .content, .case-section.meezi-section-2 .content {
-    padding-top: unset;
-}
-
-.case-section.meezi-section-1 .case-image.half img {
-    margin-top: 140px;
-}
-
-.case-section.meezi-section-2 .case-image.half img {
-    width: auto;
-    height: 100%;
+.case-study .case-section.meezi-section-2 .case-image img {
+    width: 90%;
+    height: auto;
 }
 
 .meezi-section-3 {
@@ -283,13 +275,11 @@ MEEZI
     background-size: cover;
 }
 
-.case-study .case-section.meezi-section-3 {
+.case-study .case-section.meezi-section-3 h2 {
     text-align: center;
-}
-
-.case-study .case-section.meezi-section-3 h2, .case-study .case-section.meezi-section-3 p {
     margin: 0 auto 15px auto;
 }
+
 
 .case-study .case-section.meezi-section-3 .info {
     height: 100%;
@@ -297,6 +287,8 @@ MEEZI
     color: #fff;
     text-align: center;
     justify-content: end;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .case-study .case-section.meezi-section-3 .info p {
@@ -439,15 +431,8 @@ MOTIONSENSE
     /********
     MEEZI
      *******/
-    .case-section.meezi-section-1 .case-image.half img {
-        height: 90%;
-        width: auto;
-        margin-top: 60px;
-    }
-
-    .case-section.meezi-section-2 .case-image.half img {
-        width: 80%;
-        height: auto;
+    .case-study .case-section.meezi-section-3 div:first-child {
+        margin-top: 80px;
     }
 
     /********

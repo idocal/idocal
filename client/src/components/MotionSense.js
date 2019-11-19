@@ -7,34 +7,34 @@ const project = projects['motionsense'];
 
 function MotionSense(props) {
     const section1 =
-        <FlexView column className="case-section half motionsense-section-1" width="100%" height="100%">
+        <div className="case-section half motionsense-section-1">
 
-            <FlexView column className="info half content">
+            <div className="info center">
                 <h2>{project.sections[0].title}</h2>
                 <p>{project.sections[0].text}</p>
-            </FlexView>
+            </div>
 
-        </FlexView>;
+        </div>;
 
     const section2 =
-        <FlexView column className="case-section half motionsense-section-2" width="100%" height="100%" hAlignContent="left">
+        <div className="case-section half motionsense-section-2">
 
-            <FlexView column className="info half content">
+            <div className="info center">
                 <h2>{project.sections[1].title}</h2>
                 <p>{project.sections[1].text}</p>
-            </FlexView>
+            </div>
 
-        </FlexView>;
+        </div>;
 
     const section3 =
-        <FlexView column className="case-section half motionsense-section-3" width="100%" height="100%" hAlignContent="left">
+        <div className="case-section half motionsense-section-3">
 
-            <FlexView column className="info half content">
+            <div className="info center">
                 <h2>{project.sections[2].title}</h2>
                 <p>{project.sections[2].text}</p>
-            </FlexView>
+            </div>
 
-        </FlexView>;
+        </div>;
 
 
 
