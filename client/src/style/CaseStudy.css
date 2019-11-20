@@ -25,7 +25,7 @@
     box-sizing: border-box;
     display: flex;
     flex-flow: column nowrap;
-    padding: 0 15px;
+    padding: 0 10%;
 }
 
 .case-study .case-section .case-image img {
@@ -72,7 +72,7 @@
 }
 
 .case-study .header .headline {
-    padding: 20px;
+    padding: 5%;
     width: 100%;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
@@ -82,32 +82,43 @@
     color: #fff;
     font-weight: 500;
     margin-bottom: 10px;
+    font-size: 42px;
 }
 
 .case-study .headline h2 {
     color: #eee;
-    font-weight: 300;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Lato', Helvetica, sans-serif;
+
 }
 
 .case-study .case-section {
     position: relative;
+    background-color: #f6f6f6;
 }
 
 .case-study .live button {
+    color: #f6f6f6;
     background: none;
-    border: 1px solid #000;
+    border: none;
     font-size: 36px;
     padding: 20px 40px;
-    border-radius: 6px;
     cursor: pointer;
     font-family: inherit;
 }
 
 .case-study .live button:hover {
-    background: #000;
     color: #fff;
-    transition: all .2s;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.case-study .live button::after {
+    content: '\25ba';
+    font-size: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
 .case-study .case-section h2 {
@@ -168,7 +179,7 @@ ROSETTE
     margin-top: 100px;
 }
 
-.rosette-section-3 .info {
+.case-section.rosette-section-3 .info {
     background-color: #4B4E5D;
 }
 
@@ -193,7 +204,7 @@ FEELBOARD
     background-color: #f6f6f6;
 }
 
-.feelboard-section-3 {
+.case-section.feelboard-section-3 {
     background-color: #150729;
     color: #fff;
 }
@@ -314,8 +325,13 @@ MOTIONSENSE
 }
 
 @media only screen and (min-width: 760px) {
+    .case-study .headline h1 {
+        font-size: 52px;
+    }
+
     .case-study .live button {
-        font-size: 60px;
+        font-size: 50px;
+        font-family: 'Roboto', Helvetica, sans-serif;
     }
 
     .case-study .case-section {
@@ -346,7 +362,7 @@ MOTIONSENSE
 
     .case-study .case-section.half .info {
         align-items: flex-start;
-        padding: 0 20px 0 50px;
+        padding: 0 10%;
         width: 50%;
     }
 
@@ -371,7 +387,7 @@ MOTIONSENSE
     }
 
     .case-study .case-section h2 {
-        font-size: 32px;
+        font-size: 52px;
         text-align: left;
     }
 

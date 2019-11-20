@@ -84,22 +84,29 @@ export default class CaseStudy extends Component {
 
                     { projectsMap[this.state.project] }
 
-                    <FlexView className="section live logomode-dark" width="100%" height="100%" hAlignContent="center" vAlignContent="center">
-                        <a href={this.state.url} target="_blank" rel="noopener noreferrer">
-                            <button className="live">Check it live</button>
-                        </a>
-                    </FlexView>
+                    <FlexView column className="projects section logomode-bright" width="100%">
 
-                    <FlexView className="projects section logomode-bright" width="100%">
+                        <FlexView className={"live " + this.state.project} width="100%" height="30%" hAlignContent="center" vAlignContent="center">
+                            <a href={this.state.url} target="_blank" rel="noopener noreferrer">
+                                <button>Check it live</button>
+                            </a>
+                        </FlexView>
 
-                        {
-                            this.state.nextProjects.map( (project, i) => (
-                                <Project key={i} name={projects[project].name}
-                                         tags={projects[project].tags.join(", ")}
-                                         color={projects[project].color}
-                                         alias={project} />
-                            ))
-                        }
+                        <FlexView height="70%" width="100%">
+
+                            {
+                                this.state.nextProjects.map( (project, i) => (
+                                    <Project key={i} name={projects[project].name}
+                                             tags={projects[project].tags.join(", ")}
+                                             color={projects[project].color}
+                                             alias={project} />
+                                ))
+                            }
+
+                        </FlexView>
+
+
+
 
                     </FlexView>
 

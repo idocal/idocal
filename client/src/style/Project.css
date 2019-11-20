@@ -19,6 +19,7 @@
     font-weight: 300;
     text-align: center;
     z-index: 2;
+    font-family: 'Lato', Helvetica, sans-serif;
 }
 
 .project .thumb {
@@ -39,49 +40,48 @@
     transform: scale(1.2);
 }
 
-.project.feelboard {
-    background-color: #160729;
+.project.feelboard, .live.feelboard {
+    background-color: #5496EB;
 }
 
 .project.feelboard .thumb {
     background-image: url("../images/feelboard-header.png");
 }
 
-.project.storyline {
-    background-color: #2D0E87;
+.project.storyline, .live.storyline {
+    background-color: #2C2DD0;
 }
 
 .project.storyline .thumb {
     background-image: url("../images/storyline-header.png");
 }
 
-.project.bonariv {
-    background-color: #f5f5f5;
-    color: #636363;
+.project.bonariv, .live.bonariv {
+    background-color: #3BD2CB;
 }
 
 .project.bonariv .thumb {
     background-image: url("../images/bonariv-header.jpg");
 }
 
-.project.rosette {
-    background-color: rgb(27, 27, 28);
+.project.rosette, .live.rosette {
+    background-color: #2A2E43;
 }
 
 .project.rosette .thumb {
     background-image: url("../images/rosette-header.png");
 }
 
-.project.meezi {
-    background-color: rgb(2, 83, 253);
+.project.meezi, .live.meezi {
+    background-color: #0253FD;
 }
 
 .project.meezi .thumb {
     background-image: url("../images/meezi-header.jpg");
 }
 
-.project.motionsense {
-    background-color: #4B4E5D;
+.project.motionsense, .live.motionsense {
+    background-color: #71838A;
 }
 
 .project.motionsense .thumb {

@@ -68,7 +68,7 @@ function BoNariv(props) {
     const section5 =
         <div className="case-section half bonariv-section-5">
 
-            <div className="info center text-shrink">
+            <div className="info center">
                 <h2>{project.sections[4].title}</h2>
                 <p>{project.sections[4].text}</p>
             </div>

@@ -8,7 +8,7 @@ const project = projects['rosette'];
 
 function Rosette(props) {
     const section1 =
-        <div className="case-section rosette-section-1 column">
+        <div className="case-section rosette-section-1 column" style={{background: "white"}}>
 
             <div className="info grow center text-center">
                 <h2>{project.sections[0].title}</h2>

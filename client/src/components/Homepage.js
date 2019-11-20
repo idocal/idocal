@@ -26,21 +26,18 @@ export default class Homepage extends Component {
         return (
             <FlexView grow column className="homepage" width="100%">
                 <FullPage onInit={this.props.onFullPageInit}>
-                    <FlexView column className="banner section"
-                              hAlignContent="center"
-                              vAlignContent="center"
-                              width="100%"
-                    >
+                    <div className="banner section">
                         <video loop autoPlay data-keepplaying muted playsInline>
                             <source src={Video} type='video/mp4' />
                         </video>
                         <div className="header-slogan">
-                            <FlexView vAlignContent="center" column height="100%">
-                                <h1>Hi, I'm Ido</h1>
+                            <FlexView column className="slogan-container">
+                                <h1>Hi, I'm</h1>
+                                <h1>Ido Calman</h1>
                                 <h2>I bring technological ideas to life</h2>
                             </FlexView>
                         </div>
-                    </FlexView>
+                    </div>
 
                     <FlexView className="projects section" width="100%">
                         <FlexView className="row half">
