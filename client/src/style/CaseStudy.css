@@ -276,6 +276,11 @@ BONARIV
 MEEZI
  *******/
 
+.case-study .case-section.half.meezi-section-1 .case-image img {
+    height: 90%;
+    width: auto;
+}
+
 .case-study .case-section.meezi-section-2 .case-image img {
     width: 90%;
     height: auto;
