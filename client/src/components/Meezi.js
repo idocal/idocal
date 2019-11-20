@@ -37,7 +37,7 @@ function Meezi(props) {
 
 
     const section3 =
-        <div className="case-section half meezi-section-3">
+        <div className="case-section meezi-section-3">
 
             <div className="info center">
                 <h2>{project.sections[2].title}</h2>
