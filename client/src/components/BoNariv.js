@@ -30,7 +30,7 @@ function BoNariv(props) {
                 <img src={ImgSection2} alt={project.sections[1].title} />
             </div>
 
-            <div className="info center">
+            <div className="info grow center">
                 <h2>{project.sections[1].title}</h2>
                 <p>{project.sections[1].text}</p>
             </div>
@@ -58,7 +58,7 @@ function BoNariv(props) {
                 <img src={ImgSection4} alt={project.sections[3].title} />
             </div>
 
-            <div className="info grow center text-shrink">
+            <div className="info grow center">
                 <h2>{project.sections[3].title}</h2>
                 <p>{project.sections[3].text}</p>
             </div>
@@ -68,7 +68,7 @@ function BoNariv(props) {
     const section5 =
         <div className="case-section half bonariv-section-5">
 
-            <div className="info center">
+            <div className="info center text-shrink">
                 <h2>{project.sections[4].title}</h2>
                 <p>{project.sections[4].text}</p>
             </div>

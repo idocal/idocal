@@ -44,7 +44,7 @@ function Feelboard(props) {
                 <img src={ ImgSection3 } alt={project.sections[2].title} />
             </div>
 
-            <div className="info grow center text-shrink">
+            <div className="info grow center">
                 <h2>{project.sections[2].title}</h2>
                 <p>{project.sections[2].text}</p>
             </div>
