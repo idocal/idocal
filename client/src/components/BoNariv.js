@@ -58,7 +58,7 @@ function BoNariv(props) {
                 <img src={ImgSection4} alt={project.sections[3].title} />
             </div>
 
-            <div className="info grow center">
+            <div className="info grow center text-shrink">
                 <h2>{project.sections[3].title}</h2>
                 <p>{project.sections[3].text}</p>
             </div>
