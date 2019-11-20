@@ -4,7 +4,6 @@ import { projects } from '../config';
 import ImgSection1 from "../images/feelboard-section-1.png";
 import ImgSection2 from "../images/feelboard-section-2.png";
 import ImgSection3 from "../images/feelboard-section-3.png";
-import ImgSection4 from "../images/feelboard-section-4.png";
 
 const project = projects['feelboard'];
 
