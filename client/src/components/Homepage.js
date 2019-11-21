@@ -6,6 +6,7 @@ import FullPage from './FullPage';
 import Video from '../images/header_1024.mp4';
 import { projects } from "../config";
 import preLoading from "../preLoading";
+import VideoPoster from "../images/header-poster.png";
 
 export default class Homepage extends Component {
     // constructor() {
@@ -27,7 +28,7 @@ export default class Homepage extends Component {
             <FlexView grow column className="homepage" width="100%">
                 <FullPage onInit={this.props.onFullPageInit}>
                     <div className="banner section">
-                        <video loop autoPlay data-keepplaying muted playsInline>
+                        <video loop autoPlay data-keepplaying muted playsInline poster={VideoPoster}>
                             <source src={Video} type='video/mp4' />
                         </video>
                         <div className="header-slogan">
