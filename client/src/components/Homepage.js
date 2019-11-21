@@ -19,8 +19,20 @@ export default class Homepage extends Component {
     //     })
     // }
 
+    state = {
+        loading: true
+    };
+
+    constructor(props) {
+        super(props);
+        this.headerSlogan = React.createRef();
+    }
+
     componentDidMount() {
         this.props.changeLogoMode('bright');
+        this.setState({
+            loading: false
+        })
     }
 
     render() {
@@ -31,10 +43,12 @@ export default class Homepage extends Component {
                         <video loop autoPlay data-keepplaying muted playsInline poster={VideoPoster}>
                             <source src={Video} type='video/mp4' />
                         </video>
-                        <div className="header-slogan">
+                        <div className={this.state.loading ? "header-slogan" : "header-slogan loaded"} >
                             <FlexView column className="slogan-container">
-                                <h1>Hi, I'm</h1>
-                                <h1>Ido Calman</h1>
+                                <FlexView>
+                                <h1 className="hi">Hi,</h1> <h1 className="i">I</h1> <h1 className="am">am</h1>
+                                </FlexView>
+                                <h1 className="ido">Ido Calman</h1>
                                 <h2>I bring technological ideas to life</h2>
                             </FlexView>
                         </div>

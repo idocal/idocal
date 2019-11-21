@@ -25,12 +25,41 @@
     text-align: left;
     padding: 0 10px;
     color: #f6f6f6;
+    opacity: 0;
 }
 
 .banner h2 {
     font-size: 24px;
     font-family: 'Lato', Helvetica, sans-serif;
     font-weight: 400;
+}
+
+.header-slogan.loaded h1, .header-slogan.loaded h2 {
+    opacity: 1;
+}
+
+.header-slogan.loaded h1.hi {
+    transition: opacity 2s;
+}
+
+.header-slogan.loaded h1.i {
+    transition: opacity 2s;
+    transition-delay: 1s;
+}
+
+.header-slogan.loaded h1.am {
+    transition: opacity 2s;
+    transition-delay: 1.2s;
+}
+
+.header-slogan.loaded h1.ido {
+    transition: opacity 1.5s;
+    transition-delay: 1.5s;
+}
+
+.header-slogan.loaded h2 {
+    transition: opacity 1.5s;
+    transition-delay: 2.5s;
 }
 
 .banner video {
