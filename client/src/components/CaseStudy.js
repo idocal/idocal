@@ -38,6 +38,7 @@ export default class CaseStudy extends Component {
     }
 
     async componentDidMount() {
+        this.props.changeLogoMode('symbol');
         let project = this.props.match.params['project'];
         let nextProjects = this.getNextProjects(project);
 
@@ -104,9 +105,6 @@ export default class CaseStudy extends Component {
                             }
 
                         </FlexView>
-
-
-
 
                     </FlexView>
 

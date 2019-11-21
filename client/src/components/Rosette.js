@@ -11,7 +11,7 @@ function Rosette(props) {
         <div className="case-section rosette-section-1 column" style={{background: "white"}}>
 
             <div className="info grow center text-center">
-                <h2>{project.sections[0].title}</h2>
+                <h2 style={{width: 'initial'}}>{project.sections[0].title}</h2>
                 <p className="center">{project.sections[0].text}</p>
             </div>
 
@@ -52,8 +52,8 @@ function Rosette(props) {
     const section4 =
         <div className="case-section rosette-section-4 column">
 
-            <div column className="info grow center text-center text-shrink margin-top" style={{paddingBottom: "40px"}}>
-                <h2>{project.sections[3].title}</h2>
+            <div className="info grow center text-center text-shrink margin-top" style={{paddingBottom: "40px"}}>
+                <h2 style={{width: 'initial'}}>{project.sections[3].title}</h2>
                 <p className="center">{project.sections[3].text}</p>
             </div>
 

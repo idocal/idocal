@@ -36,6 +36,7 @@
 .banner video {
     width: 260%;
     height: auto;
+    margin-bottom: -30%;
 }
 
 .projects {
@@ -75,8 +76,9 @@
     }
 
     .banner video {
-        height: 60%;
-        width: auto;
+        width: 100%;
+        margin-right: -36%;
+        margin-bottom: 0;
     }
 
     .banner h1 {

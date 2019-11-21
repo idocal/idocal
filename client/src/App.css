@@ -77,29 +77,21 @@ button:hover, button:focus, button:active{
     position: absolute;
 }
 
-.logo-bar.bright .logo-dark {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s ease;
-}
-
-.logo-bar.bright .logo-bright {
+.logo-bar.bright .logo-bright, .logo-bar.symbol .logo-symbol, .logo-bar.dark .logo-dark {
     visibility: visible;
     opacity: 1;
     transition: opacity 1s ease;
 }
 
-.logo-bar.dark .logo-bright {
+.logo-bar.bright .logo-dark, .logo-bar.bright .logo-symbol,
+.logo-bar.dark .logo-bright, .logo-bar.dark .logo-symbol,
+.logo-bar.symbol .logo-bright, .logo-bar.symbol .logo-dark
+{
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s ease;
 }
 
-.logo-bar.dark .logo-dark {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 1s ease;
-}
 
 .logo-bar.bright #burger-button .burger-bar {
     background: #fff;

@@ -5,12 +5,10 @@ import CaseStudy from "./components/CaseStudy";
 import FlexView from "react-flexview/lib/FlexView";
 import LogoBright from "./images/logo-bright@2x.png";
 import LogoDark from "./images/logo-dark@2x.png";
+import LogoSymbol from "./images/logo-symbol@2x.png";
 import Menu from './components/Menu';
 import About from './components/About';
 import Contact from './components/Contact';
-
-
-
 
 function AppRouter() {
     const [mode, setMode] = useState('bright');
@@ -32,13 +30,14 @@ function AppRouter() {
                     <Link to='/'>
                         <img src={LogoBright} className="logo-bright" alt="idocal" onClick={onClick} />
                         <img src={LogoDark} className="logo-dark" alt="idocal" onClick={onClick} />
+                        <img src={LogoSymbol} className="logo-symbol" alt="idocal" onClick={onClick} />
                     </Link>
                     <Menu />
                 </FlexView>
             </FlexView>
 
             <Route path="/" exact render={props => <Homepage {...props} changeLogoMode={changeLogoMode} onFullPageInit={onFullPageInit} /> } />
-            <Route path="/work/:project" component={CaseStudy} />
+            <Route path="/work/:project" render={props => <CaseStudy {...props} changeLogoMode={changeLogoMode} onFullPageInit={onFullPageInit} />}  />
             <Route path="/about" exact render={ props => <About {...props} changeLogoMode={changeLogoMode} /> } />
             <Route path="/contact" exact render={ props => <Contact {...props} changeLogoMode={changeLogoMode} /> } />
         </Router>

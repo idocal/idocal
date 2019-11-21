@@ -38,8 +38,19 @@
     transform: translateY(-7px) rotate(-45deg);
 }
 
-#burger-button:hover .burger-bar, #burger-button.open:hover .burger-bar, .logo-bar.dark #burger-button:hover .burger-bar {
+#burger-button:hover .burger-bar,
+.logo-bar.dark #burger-button:hover .burger-bar,
+.logo-bar.symbol #burger-button:hover .burger-bar,
+.logo-bar.bright #burger-button:hover .burger-bar {
     background: #F522D5;
+}
+
+.logo-bar #burger-button.open:hover .burger-bar {
+    background: #000;
+}
+
+.logo-bar #burger-button .burger-bar {
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.3);
 }
 
 #burger-button:active .burger-bar, #burger-button.open:active .burger-bar, .logo-bar.dark #burger-button:active .burger-bar {
