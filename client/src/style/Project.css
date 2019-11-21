@@ -32,10 +32,11 @@
     background-position: 50% 50%;
     background-size: cover;
     opacity: .03;
+    transition: transform 1.5s ease-in, opacity .8s;
 }
 
 .project:hover .thumb {
-    transition: transform 4s ease-out, opacity 3s;
+    transition: transform 4s ease-out, opacity 2s;
     opacity: .8;
     transform: scale(1.2);
 }
