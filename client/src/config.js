@@ -19,7 +19,7 @@ export const projects = {
             },
             {
                 'title': 'More than just an overview',
-                'text': 'The analyzer is provides its reader with a glance at what the text is all about. Alongside the common Sentiment and Category analyses, introduced here is the concept of “Key Entities” - for each extracted entity we statistically determine its salience using a heuristic algorithm similar to TextRank. A central entity is defined to be one that is textually close to many other entities.'
+                'text': 'The analyzer provides its reader with a glance at what the text is all about. Alongside the common Sentiment and Category analyses, introduced here is the concept of “Key Entities” - for each extracted entity we statistically determine its salience using a heuristic algorithm similar to TextRank. A central entity is defined to be one that is textually close to many other entities.'
             }
         ]
     },
@@ -102,7 +102,7 @@ export const projects = {
         'sections': [
             {
                 'title': 'Embrace state-of-the-art language generation',
-                'text': 'We should not be afraid of the progression of AI. While language generation can be misused to create fake news, it is capable to proactively enrich the interaction between humans and machines.'
+                'text': 'We should not be afraid of the progression of AI. While language generation can be misused to create fake news, it is also capable of proactively enriching the interaction between humans and machines.'
             },
             {
                 'title': 'Compose a beautiful story with AI',

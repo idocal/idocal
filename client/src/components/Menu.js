@@ -31,7 +31,7 @@ export default class Menu extends Component {
                         <Link className="menu-item" to="/about" onClick={this.toggleMenu}>About</Link>
                         <Link className="menu-item" to="/contact" onClick={this.toggleMenu}>Contact</Link>
                         <div className="secondary">
-                            <a className="menu-item secondary-item" href="https://www.linkedin.com/in/idocal/" target="_blank" rel="noopener noreferrer">LiknedIn</a>
+                            <a className="menu-item secondary-item" href="https://www.linkedin.com/in/idocal/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                             <a className="menu-item secondary-item" href="https://github.com/idocal" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </div>
                     </nav>

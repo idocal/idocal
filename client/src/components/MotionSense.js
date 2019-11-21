@@ -9,7 +9,7 @@ function MotionSense(props) {
     const section1 =
         <div className="case-section half motionsense-section-1">
 
-            <div className="info center">
+            <div className="info grow center">
                 <h2>{project.sections[0].title}</h2>
                 <p>{project.sections[0].text}</p>
             </div>
@@ -29,7 +29,7 @@ function MotionSense(props) {
     const section3 =
         <div className="case-section half motionsense-section-3">
 
-            <div className="info center">
+            <div className="info grow center">
                 <h2>{project.sections[2].title}</h2>
                 <p>{project.sections[2].text}</p>
             </div>
