@@ -90,7 +90,7 @@ export const projects = {
             },
             {
                 'title': 'Why did it work?',
-                'text': 'It’s difficult to pinpoint what exactly encouraged people to engage with this system. However, I strongly believe that it has to do with two key concepts for success in online projects: Simplicity and Gamification. The website works on literally every platform: smartphones, tablets and desktops. There is no installation or sign up required and a chat pops up about 10 seconds after visiting the site for the first time. Three gamification tweaks were introduced - funny random name generator, political figure avatar icon and a timer for each conversation. The gamified user experience made users feel that the website is a safe space for an open conversation and removes the walls of the common toxic political discourse online.'
+                'text': 'It’s difficult to pinpoint what exactly encouraged people to engage with this system. However, I strongly believe that it has to do with two key concepts for success in online projects: Simplicity and Gamification. The website works on literally every platform: smartphones, tablets and desktops. There is no installation or sign up required and a chat pops up about 10 seconds after visiting the site for the first time. Three gamification tweaks were introduced - funny random name generator, political figure avatar icon and a timer for each conversation. The gamified user experience made users feel that the website is a safe space for an open conversation and removed the walls of the commonly found online toxicity of political discourse.'
             }
         ]
     },
