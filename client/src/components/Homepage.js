@@ -52,6 +52,11 @@ export default class Homepage extends Component {
                                 <h2>I bring technological ideas to life</h2>
                             </FlexView>
                         </div>
+                        <div className="scroll-downs">
+                            <div className="mousey">
+                                <div className="scroller"></div>
+                            </div>
+                        </div>
                     </div>
 
                     <FlexView className="projects section" width="100%">

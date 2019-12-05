@@ -55,11 +55,11 @@ export const projects = {
             },
             {
                 'title': 'One platform, many use cases',
-                'text': 'The sensible board can be widely adapted. It can be used as an accessibility tool for the elderly, it can be attached to a security camera for age-based detection hazards or to adjust to a gender-specific content.'
+                'text': 'The sensible board can be widely adapted. It can be used as an accessibility tool for the elderly, can be attached to a security camera for age-based detection hazards or adjusted to a gender-specific content.'
             },
             {
                 'title': 'How it works',
-                'text': 'Our algorithm was trained in a supervised learning fashion based on more than 500k faces from IMDB and Wikipedia. It uses a Multi-task Convolutional Neural Network architecture to classify simultaneously both age and gender. Feelboard can operate on any device with a camera and CPU.'
+                'text': 'Our algorithm was trained in a supervised learning fashion based on more than 500k faces from IMDB and Wikipedia. It uses a Multi-task Convolutional Neural Network architecture to classify simultaneously both age and gender. Feelboard operates on any device with a camera and CPU.'
             },
             {
                 'title': 'Algorithmic flow'
@@ -74,7 +74,7 @@ export const projects = {
         'sections': [
             {
                 'title': 'Bo Nariv',
-                'text': 'Politics is a very complex field. It involves power, emotions, and in recent times the capability of political figures to manipulate the public’s thoughts and the truth. The discourse intentionally becomes more and more violent as online campaigns aim to divide people by creating artificial groups. Bo Nariv is a platform that strives to bridge between such very distinct isolation of the right and left wings in Israel before the 2019 elections.'
+                'text': 'Politics is a very complex field. It involves power, emotions, and in recent times the capability of political figures to manipulate the public’s thoughts and the truth. The discourse intentionally becomes more and more violent as online campaigns aim to divide people by creating artificial groups. Bo Nariv is an open platform that strives to bridge between such very distinct isolation of the right and left wings in Israel before the 2019 elections.'
             },
             {
                 'title': 'Personal discourse to the rescue',
@@ -82,15 +82,15 @@ export const projects = {
             },
             {
                 'title': 'Conversation reshapes reality',
-                'text': 'Bo Nariv was launched a week before the September elections. On its first day, more than 33,000 people interacting with the platform and nearly 80,000 chats created.'
+                'text': 'Bo Nariv was launched a week before the September 2019 elections. On its first day, more than 33,000 people interacted with the platform generating neraly 80,000 chats.'
             },
             {
                 'title': 'Continuous interaction',
-                'text': 'During the elections week more than 70,000 people logged in, and close to 1 million messages were sent using the platform. This tremendous interaction suggests that people are indeed still interested in chatting with each other rather than having the information fed to them in a single direction.'
+                'text': 'During the election week more than 70,000 people logged in, and nearly 1 million messages were sent using the platform. This tremendous interaction suggests that people are indeed still interested in chatting with each other rather than having information fed to them in a single direction.'
             },
             {
                 'title': 'Why did it work?',
-                'text': 'It’s hard to point on what exactly made people engage with this system. However, I strongly believe that it has to do with two key concepts for success in online projects: Simplicity and Gamification. The website works on literally every platform: smartphones, tablets and desktops. There is no installation or sign up required and a chat pops up about 10 seconds after visiting the site for the first time. Three gamification tweaks were introduced - funny random name generator, political figure avatar icon and a timer for each conversation. The gamified user experience made users feel that the website is a safe space for an open conversation and removes the walls of the common toxic political discourse online.'
+                'text': 'It’s difficult to pinpoint what exactly encouraged people to engage with this system. However, I strongly believe that it has to do with two key concepts for success in online projects: Simplicity and Gamification. The website works on literally every platform: smartphones, tablets and desktops. There is no installation or sign up required and a chat pops up about 10 seconds after visiting the site for the first time. Three gamification tweaks were introduced - funny random name generator, political figure avatar icon and a timer for each conversation. The gamified user experience made users feel that the website is a safe space for an open conversation and removes the walls of the common toxic political discourse online.'
             }
         ]
     },
